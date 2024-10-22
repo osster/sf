@@ -2,13 +2,12 @@
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
-    "./layouts/*.vue",
-    "./pages/*.vue",
+    "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
-    './public/components/**/*.{js,ts,jsx,tsx,html}',
+    './public/**/*.{js,ts,jsx,tsx,html}',
   ],
   theme: {
     colors: {
