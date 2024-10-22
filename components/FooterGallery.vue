@@ -17,11 +17,12 @@ import {onMounted, ref} from 'vue'
 const list = ref([])
 
 onMounted(() => {
+  const config = useRuntimeConfig()
   if (galleries.length) {
     galleries.forEach((i) => {
       list.value.push({
         url: `/s/${i.alias}/`,
-        thumb: `/${i.thumb}`,
+        thumb: `${config.public.baseURL}${i.thumb}`,
       })
     })
   }
