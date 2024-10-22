@@ -22,7 +22,7 @@ onMounted(() => {
     galleries.forEach((i) => {
       list.value.push({
         url: `/s/${i.alias}/`,
-        thumb: `${config.public.baseURL}${i.thumb}`,
+        thumb: `${config.app.baseURL}${i.thumb}`,
       })
     })
   }

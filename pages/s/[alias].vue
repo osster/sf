@@ -43,9 +43,9 @@ const route = useRoute()
 const alias = computed(() => route?.params?.alias || '')
 const logoUrl = computed(() => {
   if (slideTheme.value === 'light') {
-    return `${config.public.baseURL}img/logo-sm-white.svg`
+    return `${config.app.baseURL}img/logo-sm-white.svg`
   }
-  return `${config.public.baseURL}img/logo-sm-black.svg`
+  return `${config.app.baseURL}img/logo-sm-black.svg`
 })
 const textColor = computed(() => {
   if (slideTheme.value === 'light') {
@@ -83,7 +83,7 @@ function showSlide(idx) {
   const slide = gallery.value.slides[idx]
   slideNo.value = idx
   slideTheme.value = slide.theme
-  bgStyle.value = `background-image: url(${config.public.baseURL}${gallery.value.slides[slideNo.value].file});`;
+  bgStyle.value = `background-image: url(${config.app.baseURL}${gallery.value.slides[slideNo.value].file});`;
 }
 
 watch(
