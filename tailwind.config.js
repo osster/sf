@@ -8,6 +8,7 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    './public/components/**/*.{js,ts,jsx,tsx,html}',
   ],
   theme: {
     colors: {
