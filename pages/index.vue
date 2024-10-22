@@ -4,7 +4,7 @@
     <div class="h-full grid grid-rows-7 grid-cols-7 gap-0 px-4 py-4">
       <div class="col-start-1 row-start-3 row-end-3 text-xs">
         Full-service creative firm, <br>
-        based in Italy (2010)+
+        based in Italy (2010)
       </div>
       <div class="col-start-2 row-start-3 row-span-2 flex flex-col justify-start items-center">
         <img src="../assets/img/logo.svg" alt="SF">
