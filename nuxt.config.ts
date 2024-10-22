@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   buildModules: [],
   // robots: {},
   tailwindcss: {
-    // cssPath: ['/assets/css/main.scss', { injectPosition: 0 }],
+    cssPath: ['@/assets/css/main.scss', { injectPosition: 0 }],
     configPath: 'tailwind.config.js',
     exposeConfig: {
       level: 2
