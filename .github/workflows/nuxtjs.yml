@@ -70,27 +70,23 @@ jobs:
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-#      - name: Static HTML export with Nuxt
-#        run: ${{ steps.detect-package-manager.outputs.manager }} run generate
-#        env:
-#          NUXT_APP_BASE_URL: "/sf/"
 
       - name: Static HTML export with Nuxt
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate
         env:
           NUXT_APP_BASE_URL: '/sf/'
 
-#      - name: Upload artifact
-#        uses: actions/upload-pages-artifact@v3
-#        with:
-#          path: ./.output/public
-
-      - uses: JamesIves/github-pages-deploy-action@v4.4.0
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: '.output/public'
-          CLEAN: true
+          path: ./.output/public
+
+#      - uses: JamesIves/github-pages-deploy-action@v4.4.0
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          branch: gh-pages
+#          folder: '.output/public'
+#          clean: true
 
   # Deployment job
   deploy:
