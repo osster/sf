@@ -54,6 +54,9 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
+    app: {
+      baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    },
     public: {
       baseURL: process.env.NUXT_APP_BASE_URL || '/',
     },
