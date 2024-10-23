@@ -20,9 +20,11 @@ module.exports = {
       'sans': ['Waldenburg', 'Helvetica', 'Arial', 'sans-serif']
     },
     fontSize: {
-      xs: '0.75rem',
-      sm: '0.875rem',
-      base: '1rem',
+      '3xs': '0.5625rem', // 9px
+      '2xs': '0.6875rem', // 11px
+      xs: '0.75rem',      //
+      sm: '0.875rem',     //
+      base: '1rem',       // 16px
       lg: '1.125rem',
       xl: '1.25rem',
       '2xl': '1.5rem',

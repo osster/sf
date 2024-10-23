@@ -1,16 +1,38 @@
 <template>
 
   <main class="relative h-full container mx-auto h-full bg-sf-gray text-sf-white">
-    <div class="h-full grid grid-rows-7 grid-cols-7 gap-0 px-4 py-4">
-      <div class="col-start-1 row-start-3 row-end-3 text-xs">
-        Full-service creative firm, <br>
+    <div class="
+      h-full grid
+      grid-cols-10 grid-rows-12 gap-0 px-4 py-4
+      lg:grid-cols-7 lg:grid-rows-7
+    ">
+
+      <div class="
+        col-start-1 row-start-2 col-span-3 text-2xs
+        lg:col-start-1 lg:row-start-3 lg:col-span-1 lg:text-xs lg:pr-8
+      ">
+        Full-service creative firm,
         based in Italy (2010)
       </div>
-      <div class="col-start-2 row-start-3 row-span-2 flex flex-col justify-start items-center">
-        <img src="../assets/img/logo.svg" alt="SF">
+
+      <div class="
+        col-start-4 row-start-2 col-span-2
+        lg:col-start-2 lg:row-start-3 lg:col-span-1
+        flex flex-col justify-start items-center
+      ">
+        <img
+            class="px-5 lg:px-0"
+            src="../assets/img/logo.svg"
+            alt="SF"
+        />
       </div>
-      <div class="col-start-3 row-span-6 text-xs">
-        <div class="pt-3">
+
+      <div class="
+        col-start-6 row-start-2 col-span-4 row-span-6 text-3xs pl-4
+        lg:col-start-3 lg:row-start-1 lg:col-span-1 lg:row-span-6 lg:text-xs lg:pl-0
+        leading-none
+      ">
+        <div class="lg:pt-3 lg:pl-4">
           <ul>
             <li v-for="(v, i) in sections" :key="i" class="mb-1">
               <router-link :to="`/s/${v.alias}`">{{ v.name }}</router-link>
@@ -18,14 +40,32 @@
           </ul>
         </div>
       </div>
-      <div class="col-start-4 row-start-3 row-span-3 text-xs flex flex-col justify-start items-center">
+
+      <div class="
+        invisible
+        lg:visible lg:col-start-4 lg:row-start-3 lg:row-span-3 lg:text-xs
+        flex flex-col justify-start items-center
+      ">
         <ul>
           <li v-for="(v, i) in filters" :key="i" class="mb-2">
             <router-link :to="`/f/${v.alias}`">{{ v.name }}</router-link>
           </li>
         </ul>
       </div>
-      <div class="col-start-5 row-start-3 row-span-3 text-xs">
+
+      <div class="
+        flex flex-col justify-end items-center
+        col-start-6 col-span-5 row-start-9 row-span-1 pl-4
+        lg:block
+        lg:col-start-6 lg:col-span-1 lg:row-start-3 lg:row-span-1 lg:pl-0
+      ">
+        <img src="../assets/img/studio-white.svg" alt="Studio">
+      </div>
+
+      <div class="
+        col-start-1 col-span-5 row-start-3 row-span-3 text-2xs
+        lg:col-start-5 lg:row-start-3 lg:row-span-3 lg:text-xs
+      ">
         Creative Direction<br/>
         Brand Identity & graphic design<br/>
         Brand Initiative<br/>
@@ -38,16 +78,23 @@
         Digital Performance Review<br/>
         Brand Development Strategy
       </div>
-      <div class="col-start-6 row-start-1">
-        <porfolio-btn/>
+
+      <div class="
+        col-start-1 row-start-9
+        lg:col-start-6 lg:row-start-1
+      ">
+        <porfolio-btn
+            class="ml-0 lg:ml-4"
+        />
       </div>
-      <div class="col-start-6 row-start-3 row-span-3">
-        <img src="../assets/img/studio-white.svg" alt="Studio">
-      </div>
-      <div class="col-start-6 row-start-6 text-sm">
+
+      <div class="
+        col-start-1 row-start-8 text-base underline
+        lg:col-start-6 lg:row-start-6 lg:text-sm
+      ">
         <about-links/>
       </div>
-      <div class="col-start-7"></div>
+
     </div>
     <footer-gallery/>
   </main>
