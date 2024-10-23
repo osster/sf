@@ -55,7 +55,7 @@
 
       <div class="
         flex flex-col justify-end items-center
-        col-start-6 col-span-5 row-start-9 row-span-1 pl-4
+        col-start-6 col-span-5 row-start-10 row-span-1 pl-4
         lg:block
         lg:col-start-6 lg:col-span-1 lg:row-start-3 lg:row-span-1 lg:pl-0
       ">
@@ -80,7 +80,7 @@
       </div>
 
       <div class="
-        col-start-1 row-start-9
+        col-start-1 row-start-10
         lg:col-start-6 lg:row-start-1
       ">
         <porfolio-btn
@@ -89,7 +89,7 @@
       </div>
 
       <div class="
-        col-start-1 row-start-8 text-base underline
+        col-start-1 row-start-9 text-base underline
         lg:col-start-6 lg:row-start-6 lg:text-sm
       ">
         <about-links/>

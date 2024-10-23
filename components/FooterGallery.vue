@@ -3,7 +3,7 @@
       class="
         fixed gap-1
         flex flex-row
-        bottom-28 left-4 right-4 h-20
+        bottom-10 left-4 right-4 h-20
         lg:absolute
         lg:bottom-4 lg:left-4 lg:right-4 lg:h-16
       "
