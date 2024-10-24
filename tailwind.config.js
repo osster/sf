@@ -25,7 +25,7 @@ module.exports = {
       xs: '0.75rem',      //
       sm: '0.875rem',     //
       base: '1rem',       // 16px
-      lg: '1.125rem',
+      lg: '1.1875rem',    // 19px
       xl: '1.25rem',
       '2xl': '1.5rem',
       '2.5xl': '1.75rem',
@@ -41,6 +41,9 @@ module.exports = {
     },
     screens: {
       'lg': '1440px'
+    },
+    padding: {
+      '14px': '14px',
     },
     extend: {},
   },

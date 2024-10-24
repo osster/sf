@@ -1,9 +1,11 @@
 <template>
 
-  <main class="relative h-full container mx-auto h-full bg-sf-gray text-sf-white">
+  <main
+      class="relative h-full container mx-auto h-full bg-sf-gray text-sf-white"
+  >
     <div class="
       h-full grid
-      grid-cols-10 grid-rows-12 gap-0 px-4 py-4
+      grid-cols-10 grid-rows-12 gap-0 px-14px py-14px
       lg:grid-cols-7 lg:grid-rows-7
     ">
 
@@ -28,9 +30,9 @@
       </div>
 
       <div class="
-        col-start-6 row-start-2 col-span-4 row-span-6 text-3xs pl-4
+        col-start-6 row-start-2 col-span-4 row-span-8 text-3xs pl-4
         lg:col-start-3 lg:row-start-1 lg:col-span-1 lg:row-span-6 lg:text-xs lg:pl-0
-        leading-none
+        leading-none overflow-y-auto
       ">
         <div class="lg:pt-3 lg:pl-4">
           <ul>
@@ -54,15 +56,6 @@
       </div>
 
       <div class="
-        flex flex-col justify-end items-center
-        col-start-6 col-span-5 row-start-10 row-span-1 pl-4
-        lg:block
-        lg:col-start-6 lg:col-span-1 lg:row-start-3 lg:row-span-1 lg:pl-0
-      ">
-        <img src="../assets/img/studio-white.svg" alt="Studio">
-      </div>
-
-      <div class="
         col-start-1 col-span-5 row-start-3 row-span-3 text-2xs
         lg:col-start-5 lg:row-start-3 lg:row-span-3 lg:text-xs
       ">
@@ -79,20 +72,31 @@
         Brand Development Strategy
       </div>
 
+
       <div class="
-        col-start-1 row-start-10
-        lg:col-start-6 lg:row-start-1
+        col-start-6 col-span-5 row-start-10 row-span-1 pl-4 mt-6
+        lg:block
+        lg:col-start-6 lg:col-span-1 lg:row-start-3 lg:row-span-1 lg:pl-0 lg:mt-0
+      ">
+        <img src="../assets/img/studio-white.svg" alt="Studio">
+      </div>
+
+      <div class="
+        col-start-1 row-start-8 col-span-5 text-base underline
+        lg:col-start-6 lg:row-start-6 lg:col-span-1 lg:text-sm
+      ">
+        <about-links/>
+      </div>
+
+      <div class="
+        flex flex-col justify-center items-start
+        col-start-1 row-start-9 col-span-5
+        lg:block
+        lg:col-start-6 lg:row-start-1 lg:col-span-1
       ">
         <porfolio-btn
             class="ml-0 lg:ml-4"
         />
-      </div>
-
-      <div class="
-        col-start-1 row-start-9 text-base underline
-        lg:col-start-6 lg:row-start-6 lg:text-sm
-      ">
-        <about-links/>
       </div>
 
     </div>

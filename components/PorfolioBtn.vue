@@ -1,9 +1,13 @@
 <template>
   <router-link
-      class="sf-portfolio-btn inline-block bg-sf-white py-1 rounded-full text-sm text-sf-black font-bold"
+      class="
+        sf-portfolio-btn
+        inline-block bg-sf-white py-1 rounded-full text-sm text-sf-black font-bold
+        lg:uppercase
+      "
       to="/portfolio"
   >
-    PORTFOLIO
+    Portfolio
   </router-link>
 </template>
 
