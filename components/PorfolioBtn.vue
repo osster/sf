@@ -16,8 +16,6 @@
 
 <style scoped lang="scss">
   .sf-portfolio-btn {
-    margin-top: 0.03rem;
-    margin-left: 0.2rem;
     padding-left: 2.1rem;
     padding-right: 2.1rem;
     padding-top: 0.25rem;

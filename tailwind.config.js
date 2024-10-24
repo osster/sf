@@ -37,15 +37,26 @@ module.exports = {
       '7xl': '4.5rem',
       '7.5xl': '5rem',
       '8xl': '6rem',
-      '9xl': '8rem'
+      '9xl': '8rem',
+      
+      '9px': '9px',
+      '11px': '11px',
+      '16px': '16px',
+      '21px': '21px',
+      '28px': '28px',
+      '48px': '48px',
     },
     screens: {
       'lg': '1440px'
     },
-    padding: {
-      '14px': '14px',
+    extend: {
+      padding: {
+        '14px': '14px',
+      },
+      height: {
+        '1024px': '1024px',
+      }
     },
-    extend: {},
   },
   plugins: [],
 }
