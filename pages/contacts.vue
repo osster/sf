@@ -1,16 +1,18 @@
 <template>
   <main class="
-    h-full container mx-auto bg-sf-light text-sf-black
-    lg:min-h-[1024px]
+    relative container bg-sf-light text-sf-black mx-0 h-full w-full
+    2xl:mx-auto
+    2xl:min-h-[1024px]
   ">
     <div class="
       h-full grid gap-0
       grid-cols-10 grid-rows-12 px-14px py-14px
-      lg:grid-cols-7 lg:grid-rows-12 lg:px-4 lg:py-4
+      2xl:grid-cols-7 2xl:grid-rows-12 2xl:px-4 2xl:py-4
     ">
       <div class="
-        col-start-10 row-start-2
-        lg:col-start-7 lg:row-start-1 lg:flex justify-end
+        col-start-10 row-start-1
+        ipro12:row-start-2
+        2xl:col-start-7 2xl:row-start-1 2xl:flex justify-end
       ">
         <router-link to="/">
           <img src="../assets/img/logo-sm-black.svg" alt="SF">
@@ -19,8 +21,8 @@
 
       <div class="
         col-start-8 col-span-3 row-start-12
-        lg:col-start-6 lg:row-start-5
-        lg:flex lg:justify-start lg:items-center
+        2xl:col-start-6 2xl:row-start-5
+        2xl:flex 2xl:justify-start 2xl:items-center
       ">
         <img
             src="../assets/img/studio-black.svg"
@@ -30,92 +32,110 @@
 
       <div class="
         leading-none font-bold
-        col-start-1 col-span-7 row-start-2 row-span-3 text-21px
-        lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:row-span-5 lg:text-48px lg:pl-8 lg:pt-4
+        col-start-1 col-span-7 row-start-1 row-span-3 text-19px
+        ipro12:text-21px ipro12:row-start-2
+        2xl:col-start-1 2xl:col-span-4 2xl:row-start-1 2xl:row-span-5 2xl:text-48px 2xl:pl-8 2xl:pt-4
       ">
-      <ul class="mb-8">
-        <li>sf@studiofantasti.co</li>
-        <li class="underline">(+39) 045 6117 535</li>
-      </ul>
+        <ul class="mb-8">
+          <li>sf@studiofantasti.co</li>
+          <li class="underline">(+39) 045 6117 535</li>
+        </ul>
 
-      <div class="mb-8">
-        Headquarter: Via Antonio<br>
-        Meucci 2 - Verona (Italy)
-      </div>
+        <div class="mb-8">
+          Headquarter: Via Antonio<br>
+          Meucci 2 - Verona (Italy)
+        </div>
 
-      <div>
-        Milan: Via Pastrengo 14<br>
-        c/o YoRoom, Milano (Italy)
+        <div>
+          Milan: Via Pastrengo 14<br>
+          c/o YoRoom, Milano (Italy)
+        </div>
       </div>
-    </div>
 
       <div class="
         font-bold content-center
-        col-start-1 col-span-10 row-start-5 text-21px
-        lg:col-start-1 lg:col-span-3 lg:row-start-6 lg:text-28px
+        col-start-1 col-span-10 row-start-5 text-19px
+        ipro12:text-21px
+        2xl:col-start-1 2xl:col-span-3 2xl:row-start-6 2xl:text-28px
       ">
         <ul class="
           grid content-start gap-4
           grid-cols-5
-          lg:grid-cols-2 lg:mx-8
+          2xl:grid-cols-2 2xl:mx-8
         ">
           <li class="
             col-start-1 col-span-2
-            lg:col-start-1 lg:col-span-1
+            2xl:col-start-1 2xl:col-span-1
           ">
-            Instagram
+            <a
+                href="https://www.instagram.com/studiofantastico/"
+                target="_blank"
+            >Instagram</a>
           </li>
           <li class="
             col-start-3 col-span-3
-            lg:col-start-2 lg:col-span-1
+            2xl:col-start-2 2xl:col-span-1
           ">
-            Work with us
+            <a href="#">Work with us</a>
           </li>
         </ul>
       </div>
 
       <div class="
         content-center font-bold grid
-        col-start-1 col-span-10 row-start-6 row-span-4 grid-cols-5 gap-4 text-21px
-        lg:col-start-1 lg:col-span-5 lg:row-start-7 lg:row-span-4 lg:grid-cols-1 lg:gap-4 lg:text-28px
+        col-start-1 col-span-10 row-start-6 row-span-4 grid-cols-5 gap-4 text-19px
+        ipro12:text-21px
+        2xl:col-start-1 2xl:col-span-5 2xl:row-start-7 2xl:row-span-4 2xl:grid-cols-1 2xl:gap-4 2xl:text-28px
       ">
         <div class="
           col-start-1 col-span-2
-          lg:col-start-1 lg:col-span-1 lg:mx-8 lg:mb-6 lg:leading-7
+          2xl:col-start-1 2xl:col-span-1 2xl:mx-8 2xl:mb-6 2xl:leading-7
         ">
           Unaforesta Projects:
         </div>
         <ul class="
           col-start-3 col-span-3
-          lg:col-start-1 lg:col-span-1 lg:mx-8
+          2xl:col-start-1 2xl:col-span-1 2xl:mx-8
         ">
-          <li class="underline">Dirilievo</li>
-          <li class="underline">Off the Pitch Archive</li>
-          <li class="underline">Unaforesta Academy</li>
+          <li class="underline whitespace-nowrap">
+            <a href="#">
+              Dirilievo
+            </a>
+          </li>
+          <li class="underline whitespace-nowrap">
+            <a href="#">
+              Off the Pitch Archive
+            </a>
+          </li>
+          <li class="underline whitespace-nowrap">
+            <a href="#">
+              Unaforesta Academy
+            </a>
+          </li>
         </ul>
       </div>
 
       <div class="
         invisible
         flex items-end text-28px font-bold
-        lg:visible
-        lg:col-start-1 lg:col-span-10 lg:row-start-11
+        2xl:visible
+        2xl:col-start-1 2xl:col-span-10 2xl:row-start-11
       ">
         <h1 class="ml-8 mb-8">Contacts</h1>
       </div>
 
       <div class="
         invisible
-        lg:visible
+        2xl:visible
         col-start-6 row-start-1
       ">
         <porfolio-btn class="ml-8"/>
       </div>
 
       <div class="
-        lg:invisible
+        2xl:invisible
         visible
-        col-start-6 col-span-5 row-start-10 row-span-1
+        col-start-6 col-span-5 row-start-10 row-span-2 row-span-1
       ">
         <img
             src="../assets/img/mask-horizontal.png"

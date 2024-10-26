@@ -11,6 +11,7 @@
     "deploy": "GITHUB_PAGES=true NUXT_APP_BASE_URL=/sf/ nuxt generate && npx gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
+    "@nuxtjs/device": "^3.2.4",
     "nuxt": "^3.13.2",
     "vue": "latest",
     "vue-router": "latest"

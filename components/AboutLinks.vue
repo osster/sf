@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li>
+    <li class="mb-1">
       <router-link to="/studio">Studio</router-link>
     </li>
     <li>

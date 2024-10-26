@@ -1,40 +1,45 @@
 <template>
 
   <main
-      class="relative h-full container mx-auto h-full bg-sf-gray text-sf-white"
-  >
+      class="
+        relative container bg-sf-gray text-sf-white mx-0 h-full w-full
+        2xl:mx-auto
+      ">
     <div class="
       h-full grid
       grid-cols-10 grid-rows-12 gap-0 px-14px py-14px
-      lg:grid-cols-7 lg:grid-rows-7
+      2xl:grid-cols-7 2xl:grid-rows-7
     ">
 
       <div class="
-        col-start-1 row-start-2 col-span-3 text-2xs
-        lg:col-start-1 lg:row-start-3 lg:col-span-1 lg:text-xs lg:pr-8
+        col-start-1 row-start-1 col-span-3 text-2xs
+        ipro12:row-start-2
+        2xl:col-start-1 2xl:row-start-3 2xl:col-span-1 2xl:text-xs 2xl:pr-8
       ">
         Full-service creative firm,
         based in Italy (2010)
       </div>
 
       <div class="
-        col-start-4 row-start-2 col-span-2
-        lg:col-start-2 lg:row-start-3 lg:col-span-1
+        col-start-4 row-start-1 col-span-2
+        ipro12:row-start-2
+        2xl:col-start-2 2xl:row-start-3 2xl:col-span-1
         flex flex-col justify-start items-center
       ">
         <img
-            class="px-5 lg:px-0"
+            class="px-5 2xl:px-0"
             src="../assets/img/logo.svg"
             alt="SF"
         />
       </div>
 
       <div class="
-        col-start-6 row-start-2 col-span-4 row-span-8 text-3xs pl-4
-        lg:col-start-3 lg:row-start-1 lg:col-span-1 lg:row-span-6 lg:text-xs lg:pl-0
+        col-start-6 row-start-1 col-span-4 row-span-9 text-3xs pl-4
+        ipro12:row-start-2 ipro12:row-span-8
+        2xl:col-start-3 2xl:row-start-1 2xl:col-span-1 2xl:row-span-6 2xl:text-xs 2xl:pl-0
         leading-none overflow-y-auto
       ">
-        <div class="lg:pt-3 lg:pl-4">
+        <div class="2xl:pt-3 2xl:pl-4">
           <ul>
             <li v-for="(v, i) in sections" :key="i" class="mb-1">
               <router-link :to="`/s/${v.alias}`">{{ v.name }}</router-link>
@@ -45,7 +50,7 @@
 
       <div class="
         invisible
-        lg:visible lg:col-start-4 lg:row-start-3 lg:row-span-3 lg:text-xs
+        2xl:visible 2xl:col-start-4 2xl:row-start-3 2xl:row-span-3 2xl:text-xs
         flex flex-col justify-start items-center
       ">
         <ul>
@@ -57,7 +62,7 @@
 
       <div class="
         col-start-1 col-span-5 row-start-3 row-span-3 text-2xs
-        lg:col-start-5 lg:row-start-3 lg:row-span-3 lg:text-xs
+        2xl:col-start-5 2xl:row-start-3 2xl:row-span-3 2xl:text-xs
       ">
         Creative Direction<br/>
         Brand Identity & graphic design<br/>
@@ -75,15 +80,15 @@
 
       <div class="
         col-start-6 col-span-5 row-start-10 row-span-1 pl-4 mt-6
-        lg:block
-        lg:col-start-6 lg:col-span-1 lg:row-start-3 lg:row-span-1 lg:pl-0 lg:mt-0
+        2xl:block
+        2xl:col-start-6 2xl:col-span-1 2xl:row-start-3 2xl:row-span-1 2xl:pl-0 2xl:mt-0
       ">
         <img src="../assets/img/studio-white.svg" alt="Studio">
       </div>
 
       <div class="
         col-start-1 row-start-8 col-span-5 text-base underline
-        lg:col-start-6 lg:row-start-6 lg:col-span-1 lg:text-sm
+        2xl:col-start-6 2xl:row-start-6 2xl:col-span-1 2xl:text-sm
       ">
         <about-links/>
       </div>
@@ -91,11 +96,11 @@
       <div class="
         flex flex-col justify-center items-start
         col-start-1 row-start-9 col-span-5
-        lg:block
-        lg:col-start-6 lg:row-start-1 lg:col-span-1
+        2xl:block
+        2xl:col-start-6 2xl:row-start-1 2xl:col-span-1
       ">
         <porfolio-btn
-            class="ml-0 lg:ml-4"
+            class="ml-0 2xl:ml-4"
         />
       </div>
 

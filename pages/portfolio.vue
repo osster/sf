@@ -1,24 +1,57 @@
 <template>
-  <main class="relative h-full container mx-auto bg-sf-black text-sf-white">
-    <div class="h-full grid grid-rows-7 grid-cols-7 gap-4 px-4 py-4">
-      <div class="col-start-1 col-span-5 row-start-1 row-span-4 text-7.5xl leading-none font-bold mr-10">
-        <p>
-          To download our<br>
-          portfolio, please<br>
-          enter your email<br>
-          address in the form.<br>
-          The file will be sent<br>
-          directly to your<br>
-          inbox.
-        </p>
-      </div>
-      <div class="col-start-1 row-start-5 col-span-3 grid grid-cols-1 gap-4 content-center">
-        <email-form/>
-      </div>
-      <div class="col-start-7 row-start-1 flex justify-end">
+  <main class="
+    relative container bg-sf-black text-sf-white mx-0 h-full w-full
+    2xl:mx-auto
+    2xl:min-h-[1024px]
+  ">
+    <div class="
+      h-full grid
+      grid-cols-10 grid-rows-12 gap-0 px-14px py-14px
+      2xl:grid-cols-7 2xl:grid-rows-7 2xl:px-4 2xl:py-4
+    ">
+      <div class="
+        col-start-10 row-start-1
+        ipro12:row-start-2 ipro12:row-start-2
+        2xl:col-start-7 2xl:row-start-1 2xl:flex justify-end
+      ">
         <router-link to="/">
           <img src="../assets/img/logo-sm-white.svg" alt="SF">
         </router-link>
+      </div>
+
+      <div class="
+        leading-none font-bold
+        col-start-1 col-span-8 row-start-1 row-span-4 text-18px
+        ipro12:row-start-2 ipro12:text-21px
+        2xl:col-start-1 2xl:col-span-5 2xl:row-start-1 2xl:row-span-4 2xl:mr-10 2xl:text-80px
+      ">
+        <p class="mb-8 2xl:mb-0">
+          To download our
+          portfolio, please
+          enter your email
+          address in the form.
+        </p>
+        <p>
+          The file will be sent
+          directly to your
+          inbox.
+        </p>
+      </div>
+
+      <div class="
+        col-start-1 col-span-10 row-start-4
+        ipro12:row-start-5
+        2xl:col-start-1 2xl:row-start-6 2xl:col-span-3
+        2xl:flex flex-col justify-center items-start
+      ">
+        <email-form/>
+      </div>
+
+      <div class="
+        col-start-1 col-span-4 row-start-8 row-span-3
+        2xl:invisible
+      ">
+        <img src="../assets/img/mask-vertical.png" alt="Mask">
       </div>
     </div>
   </main>

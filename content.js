@@ -239,32 +239,38 @@ export const galleries = [
     slides: [
       {
         key: '1',
-        file: 'img/gallery/k-way/1.png',
+        fileLg: 'img/gallery/k-way/1.png',
+        fileSm: 'img/gallery/k-way/1-m.png',
         theme: 'light'
       },
       {
         key: '2',
-        file: 'img/gallery/k-way/2.png',
+        fileLg: 'img/gallery/k-way/2.png',
+        fileSm: 'img/gallery/k-way/2-m.png',
         theme: 'dark'
       },
       {
         key: '3',
-        file: 'img/gallery/k-way/3.png',
+        fileLg: 'img/gallery/k-way/3.png',
+        fileSm: 'img/gallery/k-way/3-m.png',
         theme: 'dark'
       },
       {
         key: '4',
-        file: 'img/gallery/k-way/4.png',
+        fileLg: 'img/gallery/k-way/4.png',
+        fileSm: 'img/gallery/k-way/4-m.png',
         theme: 'light'
       },
       {
         key: '5',
-        file: 'img/gallery/k-way/5.png',
+        fileLg: 'img/gallery/k-way/5.png',
+        fileSm: 'img/gallery/k-way/5-m.png',
         theme: 'light'
       },
       {
         key: '6',
-        file: 'img/gallery/k-way/6.png',
+        fileLg: 'img/gallery/k-way/6.png',
+        fileSm: 'img/gallery/k-way/6-m.png',
         theme: 'light'
       },
     ],
@@ -278,27 +284,33 @@ export const galleries = [
     slides: [
       {
         key: '1',
-        file: 'img/gallery/kappa/1.png',
-        theme: 'light'
+        fileLg: 'img/gallery/kappa/1.png',
+        fileSm: 'img/gallery/kappa/1-m.png',
+        theme: 'light',
+        noMob: true,
       },
       {
         key: '2',
-        file: 'img/gallery/kappa/2.png',
+        fileLg: 'img/gallery/kappa/2.png',
+        fileSm: 'img/gallery/kappa/2-m.png',
         theme: 'light'
       },
       {
         key: '3',
-        file: 'img/gallery/kappa/3.png',
+        fileLg: 'img/gallery/kappa/3.png',
+        fileSm: 'img/gallery/kappa/3-m.png',
         theme: 'light'
       },
       {
         key: '4',
-        file: 'img/gallery/kappa/4.png',
-        theme: 'light'
+        fileLg: 'img/gallery/kappa/4.png',
+        fileSm: 'img/gallery/kappa/4-m.png',
+        theme: 'light',
       },
       {
         key: '5',
-        file: 'img/gallery/kappa/5.png',
+        fileLg: 'img/gallery/kappa/5.png',
+        fileSm: 'img/gallery/kappa/5-m.png',
         theme: 'light'
       },
     ],
