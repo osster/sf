@@ -9,26 +9,46 @@
   >
     <div class="
       h-full grid
-      grid-cols-10 grid-rows-12 gap-4 px-14px py-14px
-      2xl:grid-cols-7 2xl:grid-rows-7 2xl:px-4 2xl:py-4
+      grid-cols-10 grid-rows-12 gap-0 px-0 py-0
+      2xl:grid-cols-7 2xl:grid-rows-7
     ">
-      <div class="
-        col-start-10 row-start-1
-        ipro12:row-start-2
-        2xl:col-start-7 2xl:row-start-1 2xl:flex justify-end
-      ">
-        <router-link to="/">
-          <img :src="logoUrl" alt="SF">
-        </router-link>
+
+      <div
+          v-if="gallery && gallery.slides.length"
+          class="
+            z-0
+            col-start-1 col-span-10 row-start-1 row-span-12
+          "
+      >
+        <swiper
+            :slides-per-view="1"
+            :space-between="0"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+        >
+          <swiper-slide
+              v-for="(d, i) in gallery.slides"
+              :key="i"
+          >
+            <img
+                class="
+                w-full h-full
+              "
+                :src="getSlideUrl(d)"
+                :alt="d.key"
+            >
+          </swiper-slide>
+        </swiper>
       </div>
 
       <div
           v-if="gallery"
           class="
+            z-10
             text-11px leading-5 font-bold
-            col-start-1 col-span-9 row-start-1 row-span-3
+            col-start-1 col-span-9 row-start-1 row-span-3 pl-14px
             ipro12:text-11px ipro12:row-start-2
-            2xl:text-base 2xl:col-start-1 2xl:col-span-4 2xl:row-start-1 2xl:row-span-3 2xl:mr-10
+            2xl:text-base 2xl:col-start-1 2xl:col-span-4 2xl:row-start-1 2xl:row-span-3 2xl:mr-10 2xl:pl-4
           "
           :class="textColor"
       >
@@ -37,6 +57,19 @@
       </div>
 
       <div class="
+        z-10
+        col-start-10 row-start-1 pr-14px
+        ipro12:row-start-2
+        2xl:col-start-7 2xl:row-start-1 2xl:pr-4
+        2xl:flex justify-end
+      ">
+        <router-link to="/">
+          <img :src="logoUrl" alt="SF">
+        </router-link>
+      </div>
+
+      <div class="
+        z-10
         invisible
         2xl:visible
         col-start-6 row-start-1
@@ -54,8 +87,13 @@ import FooterGallery from '@/components/FooterGallery'
 import { useRoute } from 'vue-router'
 import {computed, onBeforeUnmount, onMounted, ref, watch} from 'vue'
 import { galleries } from '@/content'
-const { isMobile } = useDevice()
 
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+// Import Swiper styles
+import 'swiper/css';
+
+const { isMobile } = useDevice()
 const config = useRuntimeConfig()
 
 const bgStyle = ref('')
@@ -81,6 +119,13 @@ const slideNo = ref(null)
 const slidesTot = ref(null)
 const timer = ref(null)
 
+const onSwiper = (swiper) => {
+  console.log(swiper);
+};
+const onSlideChange = () => {
+  console.log('slide change');
+};
+
 function initGallery() {
   if (alias.value !== '') {
     gallery.value = galleries.find(i => i.alias === alias.value)
@@ -95,32 +140,18 @@ function initGallery() {
         })
       }
       slidesTot.value = gallery.value.slides.length
-      showSlide(0)
-      timer.value = setInterval(() => {
-        showSlide(slideNo.value + 1)
-      }, 5000)
     }
   }
 }
 
-function showSlide(idx) {
-  if (idx > slidesTot.value-1) {
-    idx = 0
-  }
-  const slide = gallery.value.slides[idx]
-  slideNo.value = idx
-  slideTheme.value = slide.theme
-
+function getSlideUrl(slide) {
   let url = '';
   if (isMobile) {
-    url = `${config.app.baseURL}${gallery.value.slides[slideNo.value].fileSm}`;
+    url = `${config.app.baseURL}${slide.fileSm}`;
   } else {
-    url = `${config.app.baseURL}${gallery.value.slides[slideNo.value].fileLg}`;
+    url = `${config.app.baseURL}${slide.fileLg}`;
   }
-
-  bgStyle.value = `
-    background-image: url(${url});
-  `;
+  return url
 }
 
 watch(
@@ -134,10 +165,7 @@ onMounted(() => {
   initGallery()
 })
 onBeforeUnmount(() => {
-  if (timer.value) {
-    clearInterval(timer.value)
-    timer.value = null
-  }
+
 })
 </script>
 

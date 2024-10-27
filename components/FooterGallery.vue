@@ -2,36 +2,67 @@
   <div
       class="
         fixed gap-1
-        flex flex-row
-        bottom-10 left-4 right-4 h-20
-        lg:absolute
-        lg:bottom-4 lg:left-4 lg:right-4 lg:h-16
+        bottom-10 left-0 right-0 h-20
+        2xl:absolute
+        2xl:bottom-4 2xl:left-4 2xl:right-4 2xl:h-16
       "
       v-if="list.length"
   >
-    <router-link
-        v-for="(d, i) in list"
-        :key="i"
-        :to="d.url"
+    <swiper
+        :modules="[Virtual]"
+        :slides-per-view="slidesPerPage"
+        :space-between="4"
+        virtual
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
     >
-      <img
-          class="
-            w-full max-w-xl rounded-lg
-            h-20
-            lg:h-16
-          "
-          :src="d.thumb"
-          :alt="d.alt"
+      <swiper-slide
+          v-for="(d, i) in list"
+          :key="i"
+          :style="`${i===0 ? 'margin-left:4px' : ''}`"
       >
-    </router-link>
+        <router-link
+            :to="d.url"
+        >
+          <img
+              class="
+                w-full max-w-xl rounded-lg h-auto
+              "
+              :src="d.thumb"
+              :alt="d.alt"
+          >
+        </router-link>
+      </swiper-slide>
+    </swiper>
   </div>
 </template>
 
 <script setup>
 import { galleries } from '@/content'
-import {onMounted, ref} from 'vue'
+import {computed, onMounted, ref} from 'vue'
+
+import { Virtual } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+
+const { isMobile } = useDevice()
 
 const list = ref([])
+
+const onSwiper = (swiper) => {
+  console.log(swiper);
+};
+const onSlideChange = () => {
+  console.log('slide change');
+};
+
+const slidesPerPage = computed(() => {
+  let ct = 3.5;
+  if (!isMobile) {
+    ct = 15;
+  }
+  return ct
+})
 
 onMounted(() => {
   const config = useRuntimeConfig()

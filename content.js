@@ -230,47 +230,105 @@ export const filters = [
 
 export const galleries = [
   {
-    alias: 'k-way',
+    alias: 'k-way-2023-fw1',
     title: 'K WAY',
     sub: 'Creative direction and production of the Fall Winter 2023 <br>' +
       'Ski Collection launch campaign.',
     year: '2023',
-    thumb: 'img/gallery/k-way.png',
+    thumb: 'img/gallery/k-way-2023-fw1.png',
     slides: [
       {
         key: '1',
-        fileLg: 'img/gallery/k-way/1.png',
-        fileSm: 'img/gallery/k-way/1-m.png',
+        fileLg: 'img/gallery/k-way-2023-fw1/1.png',
+        fileSm: 'img/gallery/k-way-2023-fw1/1-m.png',
         theme: 'light'
       },
       {
         key: '2',
-        fileLg: 'img/gallery/k-way/2.png',
-        fileSm: 'img/gallery/k-way/2-m.png',
+        fileLg: 'img/gallery/k-way-2023-fw1/2.png',
+        fileSm: 'img/gallery/k-way-2023-fw1/2-m.png',
         theme: 'dark'
       },
       {
         key: '3',
-        fileLg: 'img/gallery/k-way/3.png',
-        fileSm: 'img/gallery/k-way/3-m.png',
+        fileLg: 'img/gallery/k-way-2023-fw1/3.png',
+        fileSm: 'img/gallery/k-way-2023-fw1/3-m.png',
         theme: 'dark'
       },
       {
         key: '4',
-        fileLg: 'img/gallery/k-way/4.png',
-        fileSm: 'img/gallery/k-way/4-m.png',
+        fileLg: 'img/gallery/k-way-2023-fw1/4.png',
+        fileSm: 'img/gallery/k-way-2023-fw1/4-m.png',
         theme: 'light'
       },
       {
         key: '5',
-        fileLg: 'img/gallery/k-way/5.png',
-        fileSm: 'img/gallery/k-way/5-m.png',
+        fileLg: 'img/gallery/k-way-2023-fw1/5.png',
+        fileSm: 'img/gallery/k-way-2023-fw1/5-m.png',
         theme: 'light'
       },
       {
         key: '6',
-        fileLg: 'img/gallery/k-way/6.png',
-        fileSm: 'img/gallery/k-way/6-m.png',
+        fileLg: 'img/gallery/k-way-2023-fw1/6.png',
+        fileSm: 'img/gallery/k-way-2023-fw1/6-m.png',
+        theme: 'light'
+      },
+    ],
+  },
+  {
+    alias: 'k-way-2023-fw2',
+    title: 'K WAY',
+    sub: 'Creative direction and production of the Fall Winter 2023 <br>' +
+      'Ski Collection launch campaign.',
+    year: '2023',
+    thumb: 'img/gallery/k-way-2023-fw2.png',
+    slides: [
+      {
+        key: '1',
+        fileLg: 'img/gallery/k-way-2023-fw2/1.png',
+        fileSm: 'img/gallery/k-way-2023-fw2/1-m.png',
+        theme: 'light'
+      },
+      {
+        key: '2',
+        fileLg: 'img/gallery/k-way-2023-fw2/2.png',
+        fileSm: 'img/gallery/k-way-2023-fw2/2-m.png',
+        theme: 'dark'
+      },
+      {
+        key: '3',
+        fileLg: 'img/gallery/k-way-2023-fw2/3.png',
+        fileSm: 'img/gallery/k-way-2023-fw2/3-m.png',
+        theme: 'dark'
+      },
+      {
+        key: '4',
+        fileLg: 'img/gallery/k-way-2023-fw2/4.png',
+        fileSm: 'img/gallery/k-way-2023-fw2/4-m.png',
+        theme: 'light'
+      },
+      {
+        key: '5',
+        fileLg: 'img/gallery/k-way-2023-fw2/5.png',
+        fileSm: 'img/gallery/k-way-2023-fw2/5-m.png',
+        theme: 'light'
+      },
+      {
+        key: '6',
+        fileLg: 'img/gallery/k-way-2023-fw2/6.png',
+        fileSm: 'img/gallery/k-way-2023-fw2/6-m.png',
+        theme: 'light'
+      },
+      {
+        key: '7',
+        fileLg: 'img/gallery/k-way-2023-fw2/7.png',
+        fileSm: 'img/gallery/k-way-2023-fw2/7-m.png',
+        theme: 'light'
+      },
+      {
+        key: '8',
+        fileLg: 'img/gallery/k-way-2023-fw2/8.png',
+        fileSm: 'img/gallery/k-way-2023-fw2/8-m.png',
         theme: 'light'
       },
     ],
@@ -311,6 +369,51 @@ export const galleries = [
         key: '5',
         fileLg: 'img/gallery/kappa/5.png',
         fileSm: 'img/gallery/kappa/5-m.png',
+        theme: 'light'
+      },
+    ],
+  },
+  {
+    alias: 'k-way-2024',
+    title: 'K WAY',
+    sub: 'Creative direction and production of the Spring Summer 2024. <br>Swim suite launch campaign collection.',
+    year: '2024',
+    thumb: 'img/gallery/k-way-2024.png',
+    slides: [
+      {
+        key: '1',
+        fileLg: 'img/gallery/k-way-2024/1.png',
+        fileSm: 'img/gallery/k-way-2024/1-m.png',
+        theme: 'light',
+      },
+      {
+        key: '2',
+        fileLg: 'img/gallery/k-way-2024/2.png',
+        fileSm: 'img/gallery/k-way-2024/2-m.png',
+        theme: 'light'
+      },
+      {
+        key: '3',
+        fileLg: 'img/gallery/k-way-2024/3.png',
+        fileSm: 'img/gallery/k-way-2024/3-m.png',
+        theme: 'light'
+      },
+      {
+        key: '4',
+        fileLg: 'img/gallery/k-way-2024/4.png',
+        fileSm: 'img/gallery/k-way-2024/4-m.png',
+        theme: 'light',
+      },
+      {
+        key: '5',
+        fileLg: 'img/gallery/k-way-2024/5.png',
+        fileSm: 'img/gallery/k-way-2024/5-m.png',
+        theme: 'light'
+      },
+      {
+        key: '5',
+        fileLg: 'img/gallery/k-way-2024/6.png',
+        fileSm: 'img/gallery/k-way-2024/6-m.png',
         theme: 'light'
       },
     ],
