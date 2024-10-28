@@ -231,14 +231,14 @@ export const filters = [
 export const galleries = [
   {
     alias: 'k-way-2023-fw1',
-    title: 'K WAY',
-    sub: 'Creative direction and production of the Fall Winter 2023 <br>' +
-      'Ski Collection launch campaign.',
     year: '2023',
     thumb: 'img/gallery/k-way-2023-fw1.png',
     slides: [
       {
         key: '1',
+        title: 'K WAY',
+        sub: 'Creative direction and production of the Fall Winter 2023 <br>' +
+          'Ski Collection launch campaign.',
         fileLg: 'img/gallery/k-way-2023-fw1/1.png',
         fileSm: 'img/gallery/k-way-2023-fw1/1-m.png',
         theme: 'light'
@@ -277,14 +277,14 @@ export const galleries = [
   },
   {
     alias: 'k-way-2023-fw2',
-    title: 'K WAY',
-    sub: 'Creative direction and production of the Fall Winter 2023 <br>' +
-      'Ski Collection launch campaign.',
     year: '2023',
     thumb: 'img/gallery/k-way-2023-fw2.png',
     slides: [
       {
         key: '1',
+        title: 'K WAY',
+        sub: 'Creative direction and production of the Fall Winter 2023 <br>' +
+          'Ski Collection launch campaign.',
         fileLg: 'img/gallery/k-way-2023-fw2/1.png',
         fileSm: 'img/gallery/k-way-2023-fw2/1-m.png',
         theme: 'light'
@@ -335,13 +335,13 @@ export const galleries = [
   },
   {
     alias: 'kappa',
-    title: 'KAPPA',
-    sub: 'Creative direction and production of the Kappa Horizon winter collection.',
     year: '2023',
     thumb: 'img/gallery/kappa.png',
     slides: [
       {
         key: '1',
+        title: 'KAPPA',
+        sub: 'Creative direction and production of the Kappa Horizon winter collection.',
         fileLg: 'img/gallery/kappa/1.png',
         fileSm: 'img/gallery/kappa/1-m.png',
         theme: 'light',
@@ -375,13 +375,13 @@ export const galleries = [
   },
   {
     alias: 'k-way-2024',
-    title: 'K WAY',
-    sub: 'Creative direction and production of the Spring Summer 2024. <br>Swim suite launch campaign collection.',
     year: '2024',
     thumb: 'img/gallery/k-way-2024.png',
     slides: [
       {
         key: '1',
+        title: 'K WAY',
+        sub: 'Creative direction and production of the Spring Summer 2024. <br>Swim suite launch campaign collection.',
         fileLg: 'img/gallery/k-way-2024/1.png',
         fileSm: 'img/gallery/k-way-2024/1-m.png',
         theme: 'light',

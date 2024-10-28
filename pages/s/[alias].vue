@@ -5,7 +5,6 @@
         2xl:mx-auto
         2xl:min-h-[1024px]
       "
-      :style="bgStyle"
   >
     <div class="
       h-full grid
@@ -23,6 +22,8 @@
         <swiper
             :slides-per-view="1"
             :space-between="0"
+            :update-on-window-resize="true"
+            :loop="true"
             @swiper="onSwiper"
             @slideChange="onSlideChange"
         >
@@ -30,6 +31,11 @@
               v-for="(d, i) in gallery.slides"
               :key="i"
           >
+            <div
+                :style="getSlideStyle(d)"
+                class="w-full h-full bg-center"
+            ></div>
+            <!--
             <img
                 class="
                 w-full h-full
@@ -37,12 +43,13 @@
                 :src="getSlideUrl(d)"
                 :alt="d.key"
             >
+            -->
           </swiper-slide>
         </swiper>
       </div>
 
       <div
-          v-if="gallery"
+          v-if="gallery && (gallery.slides[slideNo].title || gallery.slides[slideNo].sub)"
           class="
             z-10
             text-11px leading-5 font-bold
@@ -52,8 +59,8 @@
           "
           :class="textColor"
       >
-        <span v-html="gallery.title"></span><br>
-        <span v-html="gallery.sub"></span>
+        <span v-html="gallery.slides[slideNo].title"></span><br>
+        <span v-html="gallery.slides[slideNo].sub"></span>
       </div>
 
       <div class="
@@ -115,15 +122,15 @@ const textColor = computed(() => {
 })
 
 const slideTheme = ref('light')
-const slideNo = ref(null)
-const slidesTot = ref(null)
+const slideNo = ref(0)
+const slidesTot = ref(0)
 const timer = ref(null)
 
 const onSwiper = (swiper) => {
-  console.log(swiper);
+  // console.log(swiper);
 };
-const onSlideChange = () => {
-  console.log('slide change');
+const onSlideChange = (d) => {
+  slideNo.value = d?.realIndex || 0;
 };
 
 function initGallery() {
@@ -152,6 +159,16 @@ function getSlideUrl(slide) {
     url = `${config.app.baseURL}${slide.fileLg}`;
   }
   return url
+}
+
+function getSlideStyle(slide) {
+  let css = '';
+  if (isMobile) {
+    css = `background-image: url(${config.app.baseURL}${slide.fileSm}); height: 100svh;`;
+  } else {
+    css = `background-image: url(${config.app.baseURL}${slide.fileLg}); height: 100svh;`;
+  }
+  return css
 }
 
 watch(
