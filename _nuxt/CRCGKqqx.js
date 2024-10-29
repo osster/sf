@@ -1,1 +1,0 @@
-import{_ as e,g as r,t as n,R as s,A as l,B as c}from"./Ck_pbQ7V.js";const p={};function x(a,o){const t=r("router-link");return n(),s(t,{class:"text-16px ipro12:text-18px inline-block bg-sf-white rounded-full text-sf-black font-bold py-1 px-5 2xl:uppercase 2xl:px-8",to:"/portfolio"},{default:l(()=>o[0]||(o[0]=[c(" Portfolio ")])),_:1})}const i=e(p,[["render",x]]);export{i as P};
