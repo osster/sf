@@ -55,18 +55,39 @@ module.exports = {
         '2xl': { min: '1359px' } // Desktop widescreen.
       },
       fontSize: {
+        '8px': '0.5rem',
         '9px': '0.5625rem',
         '10px': '0.625rem',
         '11px': '0.6875rem',
+        '15px': '0.9375rem',
         '16px': '1rem',
+        '17px': '1.0625rem',
         '18px': '1.125rem',
         '19px': '1.1875rem',
         '21px': '1.3125rem',
-        '28px': '28px',
+        '28px': '1.75rem',
+        '39px': '2.4375rem',
         '48px': '48px',
         '80px': '5rem'
       },
+      lineHeight: {
+        '14px': '0.875rem',
+        '16px': '1rem',
+        '17px': '1.0625rem',
+        '18px': '1.125rem',
+        '19px': '1.1875rem',
+        '20px': '1.25rem',
+        '24px': '1.5rem',
+        '26px': '1.625rem',
+        '28px': '1.75rem',
+        '44px': '2.75rem',
+        '63px': '3.937rem',
+      },
       padding: {
+        '14px': '14px',
+      },
+      margin: {
+        '1px': '1px',
         '14px': '14px',
       },
       height: {

@@ -1,9 +1,8 @@
 <template>
   <main
       class="
-        relative container bg-sf-black text-sf-white mx-0 h-full w-full bg-no-repeat bg-center bg-cover
+        relative container bg-sf-black text-sf-white mx-0 h-full w-full overflow-hidden bg-no-repeat bg-center bg-cover
         2xl:mx-auto
-        2xl:min-h-[1024px]
       "
   >
     <div class="
@@ -52,31 +51,43 @@
           v-if="gallery && (gallery.slides[slideNo].title || gallery.slides[slideNo].sub)"
           class="
             z-10
-            text-11px leading-5 font-bold
-            col-start-1 col-span-9 row-start-1 row-span-3 pl-14px
-            ipro12:text-11px ipro12:row-start-2
-            2xl:text-base 2xl:col-start-1 2xl:col-span-4 2xl:row-start-1 2xl:row-span-3 2xl:mr-10 2xl:pl-4
+            text-10px leading-5 font-bold
+            col-start-1 col-span-8 row-start-1 row-span-3 pl-14px pt-14px
+            ipro12:text-11px ipro12:row-start-2 ipro12:pt-0
+            2xl:text-base 2xl:col-start-1 2xl:col-span-3 2xl:row-start-1 2xl:row-span-3 2xl:pr-24 2xl:pl-4
           "
           :class="textColor"
       >
-        <span v-html="gallery.slides[slideNo].title"></span><br>
-        <span v-html="gallery.slides[slideNo].sub"></span>
+        <div
+            v-if="gallery.slides[slideNo].title"
+            v-html="gallery.slides[slideNo].title"
+        />
+        <div
+            v-if="gallery.slides[slideNo].sub"
+            v-html="gallery.slides[slideNo].sub"
+        />
       </div>
 
       <div class="
         z-10
-        col-start-10 row-start-1 pr-14px
+        col-start-9 col-span-2 row-start-1 flex justify-end items-start
         ipro12:row-start-2
         2xl:col-start-7 2xl:row-start-1 2xl:pr-4
         2xl:flex justify-end
       ">
-        <router-link to="/">
+        <router-link
+            class="
+              mr-14px mt-14px
+              ipro12:mt-0
+            "
+            to="/"
+        >
           <img :src="logoUrl" alt="SF">
         </router-link>
       </div>
 
       <div class="
-        z-10
+        z-10 mt-4
         invisible
         2xl:visible
         col-start-6 row-start-1

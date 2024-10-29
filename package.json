@@ -5,10 +5,11 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "dev:host": "HOST=localhost PORT=3000 nuxt dev --host 0.0.0.0",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "GITHUB_PAGES=true NUXT_APP_BASE_URL=/sf/ nuxt generate && npx gh-pages --dotfiles -d .output/public"
+    "deploy": "GITHUB_PAGES=true NUXT_APP_BASE_URL=/sf/ NUXT_APP_OUT_DIR=.output/deploy nuxt generate && npx gh-pages --dotfiles -d .output/deploy"
   },
   "dependencies": {
     "@nuxtjs/device": "^3.2.4",

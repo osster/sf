@@ -1,9 +1,10 @@
 <template>
   <router-link
       class="
-        sf-portfolio-btn
-        inline-block bg-sf-white py-1 rounded-full text-sm text-sf-black font-bold
-        lg:uppercase
+        text-16px
+        ipro12:text-18px
+        inline-block bg-sf-white rounded-full text-sf-black font-bold py-1 px-5
+        2xl:uppercase 2xl:px-8
       "
       to="/portfolio"
   >
@@ -15,10 +16,4 @@
 </script>
 
 <style scoped lang="scss">
-  .sf-portfolio-btn {
-    padding-left: 2.1rem;
-    padding-right: 2.1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
 </style>

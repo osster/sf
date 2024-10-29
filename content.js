@@ -237,7 +237,7 @@ export const galleries = [
       {
         key: '1',
         title: 'K WAY',
-        sub: 'Creative direction and production of the Fall Winter 2023 <br>' +
+        sub: 'Creative direction and production of the Fall Winter 2023 ' +
           'Ski Collection launch campaign.',
         fileLg: 'img/gallery/k-way-2023-fw1/1.png',
         fileSm: 'img/gallery/k-way-2023-fw1/1-m.png',
@@ -283,7 +283,7 @@ export const galleries = [
       {
         key: '1',
         title: 'K WAY',
-        sub: 'Creative direction and production of the Fall Winter 2023 <br>' +
+        sub: 'Creative direction and production of the Fall Winter 2023 ' +
           'Ski Collection launch campaign.',
         fileLg: 'img/gallery/k-way-2023-fw2/1.png',
         fileSm: 'img/gallery/k-way-2023-fw2/1-m.png',
@@ -349,6 +349,8 @@ export const galleries = [
       },
       {
         key: '2',
+        title: 'KAPPA',
+        sub: 'Creative direction and production of the Kappa Horizon winter collection.',
         fileLg: 'img/gallery/kappa/2.png',
         fileSm: 'img/gallery/kappa/2-m.png',
         theme: 'light'
@@ -381,7 +383,7 @@ export const galleries = [
       {
         key: '1',
         title: 'K WAY',
-        sub: 'Creative direction and production of the Spring Summer 2024. <br>Swim suite launch campaign collection.',
+        sub: 'Creative direction and production of the Spring Summer 2024. Swim suite launch campaign collection.',
         fileLg: 'img/gallery/k-way-2024/1.png',
         fileSm: 'img/gallery/k-way-2024/1-m.png',
         theme: 'light',

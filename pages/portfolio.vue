@@ -20,10 +20,10 @@
       </div>
 
       <div class="
-        leading-none font-bold
+        font-bold
         col-start-1 col-span-8 row-start-1 row-span-4 text-18px
         ipro12:row-start-2 ipro12:text-21px
-        2xl:col-start-1 2xl:col-span-5 2xl:row-start-1 2xl:row-span-4 2xl:mr-10 2xl:text-80px
+        2xl:col-start-1 2xl:col-span-5 2xl:row-start-1 2xl:row-span-4 2xl:mr-10 2xl:text-80px 2xl:leading-63px
       ">
         <p class="mb-8 2xl:mb-0">
           To download our
@@ -41,7 +41,7 @@
       <div class="
         col-start-1 col-span-10 row-start-4
         ipro12:row-start-5
-        2xl:col-start-1 2xl:row-start-6 2xl:col-span-3
+        2xl:col-start-1 2xl:row-start-5 2xl:col-span-3
         2xl:flex flex-col justify-center items-start
       ">
         <email-form/>

@@ -1,10 +1,6 @@
 <template>
-  <ul class="
-    text-16px
-    ipro12:text-18px
-    leading-none underline
-  ">
-    <li class="mb-3">
+  <ul>
+    <li class="mb-1">
       <router-link to="/studio">Studio</router-link>
     </li>
     <li>
