@@ -1,18 +1,19 @@
 <template>
   <main class="
     relative container bg-sf-black text-sf-white mx-0 h-full w-full overflow-hidden
-    2xl:mx-auto
+    xl:mx-auto
   ">
     <div class="
       h-full grid
       grid-cols-10 grid-rows-12 gap-0 px-14px py-14px
-      2xl:grid-cols-7 2xl:grid-rows-7 2xl:px-4 2xl:py-4
+      xl:grid-cols-7 xl:grid-rows-7 xl:px-4 xl:py-4
+      landscape:h-auto landscape:min-h-[1024px]
     ">
 
       <div class="
         col-start-10 row-start-1
-        ipro12:row-start-2
-        2xl:col-start-7 2xl:row-start-1 2xl:flex justify-end
+        ipv12:row-start-2
+        xl:col-start-7 xl:row-start-1 xl:flex justify-end
       ">
         <router-link to="/">
           <img src="../assets/img/logo-sm-white.svg" alt="SF">
@@ -23,8 +24,8 @@
         text-15px leading-16px
         overflow-y-auto font-bold
         col-start-1 col-span-7 row-start-1 row-span-8 mr-0
-        ipro12:text-19px ipro12:leading-20px ipro12:row-start-2 ipro12:row-span-7 ipro12:mr-0
-        2xl:col-start-1 2xl:col-span-4 2xl:row-start-1 2xl:row-span-6 2xl:text-39px 2xl:leading-44px 2xl:mr-20
+        ipv12:text-19px ipv12:leading-20px ipv12:row-start-2 ipv12:row-span-7 ipv12:mr-0
+        xl:col-start-1 xl:col-span-4 xl:row-start-1 xl:row-span-6 xl:text-39px xl:leading-44px xl:mr-20
       ">
         <p class="
           mb-1px
@@ -43,24 +44,24 @@
       <div class="
         flex flex-col justify-center items-start
         col-start-1 col-span-5 row-start-8 row-span-2
-        2xl:col-start-6 2xl:row-start-6 2xl:col-span-1 2xl:text-sm
+        xl:col-start-6 xl:row-start-6 xl:col-span-1 xl:text-sm
       ">
         <about-links/>
       </div>
       <div class="
         flex flex-col justify-center items-start
         col-start-1 row-start-10 col-span-5
-        2xl:block
-        2xl:col-start-6 2xl:row-start-1 2xl:col-span-1
+        xl:block
+        xl:col-start-6 xl:row-start-1 xl:col-span-1
       ">
         <porfolio-btn
-            class="ml-0 2xl:ml-4"
+            class="ml-0 xl:ml-4"
         />
       </div>
 
       <div class="
         invisible
-        2xl:visible
+        xl:visible
         col-start-5 row-start-3 row-end-3 text-xs
       ">
         Full-service creative firm, <br>
@@ -68,7 +69,7 @@
       </div>
       <div class="
         invisible
-        2xl:visible
+        xl:visible
         col-start-6 row-start-3 row-span-3 relative
       ">
         <img

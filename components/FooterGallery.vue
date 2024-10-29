@@ -3,7 +3,7 @@
       class="
         fixed gap-1
         bottom-1 left-0 right-0 h-20
-        ipro12:bottom-10
+        ipv12:bottom-10
         2xl:absolute
         2xl:bottom-4 2xl:left-4 2xl:right-4 2xl:h-16
       "

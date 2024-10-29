@@ -1,18 +1,19 @@
 <template>
   <main class="
     relative container bg-sf-light text-sf-black mx-0 h-full w-full overflow-hidden
-    2xl:mx-auto
+    xl:mx-auto
+    landscape:h-auto landscape:min-h-[1024px]
   ">
     <div class="
       h-full grid gap-0
       grid-cols-10 grid-rows-12 px-14px py-14px
-      2xl:grid-cols-7 2xl:grid-rows-12 2xl:px-4 2xl:py-4
+      xl:grid-cols-7 xl:grid-rows-12 xl:px-4 xl:py-4
     ">
       <div class="
         z-10
         col-start-10 row-start-1
-        ipro12:row-start-2
-        2xl:col-start-7 2xl:row-start-1 2xl:flex justify-end
+        ipv12:row-start-2
+        xl:col-start-7 xl:row-start-1 xl:flex justify-end
       ">
         <router-link to="/">
           <img src="../assets/img/logo-sm-black.svg" alt="SF">
@@ -21,14 +22,14 @@
 
       <div class="
         z-0
-        overflow-y-auto leading-none font-bold
+         leading-none font-bold
         col-start-1 col-span-12 row-start-1 row-span-3 text-19px
-        ipro12:text-21px ipro12:row-start-2
-        2xl:col-start-1 2xl:col-span-8 2xl:row-start-1 2xl:row-span-6 2xl:text-48px 2xl:pl-8 2xl:pt-4
+        ipv12:text-21px ipv12:row-start-2 ipv12:row-span-4
+        xl:col-start-1 xl:col-span-8 xl:row-start-1 xl:row-span-6 xl:text-48px xl:pl-8 xl:pt-4
       ">
         <div class="
           mb-7
-          ipro12:mb-8
+          ipv12:mb-8
         ">
           Headquarter: Via Antonio<br>
           Meucci 2 - Verona (Italy)<br>
@@ -41,7 +42,7 @@
 
         <ul class="
           mb-7
-          ipro12:mb-8
+          ipv12:mb-8
         ">
           <li>sf@studiofantasti.co</li>
           <li class="underline">(+39) 045 6117 535</li>
@@ -57,17 +58,17 @@
       <div class="
         font-bold content-center
         col-start-1 col-span-10 row-start-5 text-19px
-        ipro12:text-21px
-        2xl:col-start-1 2xl:col-span-3 2xl:row-start-7 2xl:text-28px
+        ipv12:text-21px
+        xl:col-start-1 xl:col-span-3 xl:row-start-7 xl:text-28px
       ">
         <ul class="
           grid content-start gap-4
           grid-cols-5
-          2xl:grid-cols-2 2xl:mx-8
+          xl:grid-cols-2 xl:mx-8
         ">
           <li class="
             col-start-1 col-span-2
-            2xl:col-start-1 2xl:col-span-1
+            xl:col-start-1 xl:col-span-1
           ">
             <a
                 href="https://www.instagram.com/studiofantastico/"
@@ -76,7 +77,7 @@
           </li>
           <li class="
             col-start-3 col-span-3
-            2xl:col-start-2 2xl:col-span-1
+            xl:col-start-2 xl:col-span-1
           ">
             <a href="#">Work with us</a>
           </li>
@@ -86,18 +87,18 @@
       <div class="
         content-center font-bold grid
         col-start-1 col-span-10 row-start-6 row-span-3 grid-cols-5 gap-4 text-19px
-        ipro12:text-21px
-        2xl:col-start-1 2xl:col-span-5 2xl:row-start-8 2xl:row-span-4 2xl:grid-cols-1 2xl:gap-4 2xl:text-28px
+        ipv12:text-21px
+        xl:col-start-1 xl:col-span-5 xl:row-start-8 xl:row-span-4 xl:grid-cols-1 xl:gap-4 xl:text-28px
       ">
         <div class="
           col-start-1 col-span-2
-          2xl:col-start-1 2xl:col-span-1 2xl:mx-8 2xl:mb-6 2xl:leading-7
+          xl:col-start-1 xl:col-span-1 xl:mx-8 xl:mb-6 xl:leading-7
         ">
           Unaforesta Projects:
         </div>
         <ul class="
           col-start-3 col-span-3
-          2xl:col-start-1 2xl:col-span-1 2xl:mx-8
+          xl:col-start-1 xl:col-span-1 xl:mx-8
         ">
           <li class="underline whitespace-nowrap">
             <a
@@ -128,10 +129,10 @@
 
       <div class="
         z-0
-        2xl:invisible
+        xl:invisible
         visible
-        col-start-3 col-span-8 row-start-10 row-span-4 pl-4 pb-8
-        ipro12:row-start-9 ipro12:row-span-3 ipro12:pb-0
+        col-start-3 col-span-8 row-start-9 row-span-4 pl-4 pb-8
+        ipv12:row-start-9 ipv12:row-span-3 ipv12:pb-0
         flex justify-end
       ">
         <img
@@ -143,9 +144,9 @@
       <div class="
         col-start-7 col-span-4 row-start-12
         flex items-end
-        ipro12:items-center
-        2xl:col-start-6 2xl:row-start-5
-        2xl:flex 2xl:justify-start 2xl:items-center
+        ipv12:items-center
+        xl:col-start-6 xl:row-start-5
+        xl:flex xl:justify-start xl:items-center
       ">
         <img
             src="../assets/img/studio-black.svg"
@@ -157,7 +158,7 @@
       <div class="
         z-10
         invisible
-        2xl:visible
+        xl:visible
         col-start-6 row-start-1
       ">
         <porfolio-btn class="ml-8"/>
@@ -166,8 +167,8 @@
       <div class="
         invisible
         flex items-end text-28px font-bold
-        2xl:visible
-        2xl:col-start-1 2xl:col-span-10 2xl:row-start-12
+        xl:visible
+        xl:col-start-1 xl:col-span-10 xl:row-start-12
       ">
         <h1 class="ml-8 mb-8">Contacts</h1>
       </div>

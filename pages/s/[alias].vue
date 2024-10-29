@@ -1,14 +1,13 @@
 <template>
-  <main
-      class="
-        relative container bg-sf-black text-sf-white mx-0 h-full w-full overflow-hidden bg-no-repeat bg-center bg-cover
-        2xl:mx-auto
-      "
-  >
+  <main class="
+    relative container bg-sf-black text-sf-white mx-0 h-full w-full overflow-hidden bg-no-repeat bg-center bg-cover
+    xl:mx-auto
+    landscape:h-auto landscape:min-h-[1024px]
+  ">
     <div class="
       h-full grid
       grid-cols-10 grid-rows-12 gap-0 px-0 py-0
-      2xl:grid-cols-7 2xl:grid-rows-7
+      xl:grid-cols-7 xl:grid-rows-7
     ">
 
       <div
@@ -53,8 +52,8 @@
             z-10
             text-10px leading-5 font-bold
             col-start-1 col-span-8 row-start-1 row-span-3 pl-14px pt-14px
-            ipro12:text-11px ipro12:row-start-2 ipro12:pt-0
-            2xl:text-base 2xl:col-start-1 2xl:col-span-3 2xl:row-start-1 2xl:row-span-3 2xl:pr-24 2xl:pl-4
+            ipv12:text-11px ipv12:row-start-2 ipv12:pt-0
+            xl:text-base xl:col-start-1 xl:col-span-3 xl:row-start-1 xl:row-span-3 xl:pr-24 xl:pl-4
           "
           :class="textColor"
       >
@@ -71,14 +70,14 @@
       <div class="
         z-10
         col-start-9 col-span-2 row-start-1 flex justify-end items-start
-        ipro12:row-start-2
-        2xl:col-start-7 2xl:row-start-1 2xl:pr-4
-        2xl:flex justify-end
+        ipv12:row-start-2
+        xl:col-start-7 xl:row-start-1 xl:pr-4
+        xl:flex justify-end
       ">
         <router-link
             class="
               mr-14px mt-14px
-              ipro12:mt-0
+              ipv12:mt-0
             "
             to="/"
         >
@@ -89,7 +88,7 @@
       <div class="
         z-10 mt-4
         invisible
-        2xl:visible
+        xl:visible
         col-start-6 row-start-1
       ">
         <porfolio-btn/>

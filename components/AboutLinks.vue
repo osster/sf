@@ -1,7 +1,7 @@
 <template>
   <ul class="
     text-16px
-    ipro12:text-18px
+    ipv12:text-18px
     leading-none underline
   ">
     <li class="mb-3">

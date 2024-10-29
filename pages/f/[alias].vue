@@ -14,7 +14,7 @@
     ">
       <div class="
         col-start-10 row-start-1
-        ipro12:row-start-2
+        ipv12:row-start-2
         2xl:col-start-7 2xl:row-start-1 2xl:flex justify-end
       ">
         <router-link to="/">
@@ -27,7 +27,7 @@
           class="
             text-11px leading-5 font-bold
             col-start-1 col-span-9 row-start-1 row-span-3
-            ipro12:text-11px ipro12:row-start-2
+            ipv12:text-11px ipv12:row-start-2
             2xl:text-base 2xl:col-start-1 2xl:col-span-4 2xl:row-start-1 2xl:row-span-3 2xl:mr-10
           "
           :class="textColor"
