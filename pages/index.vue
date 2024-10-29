@@ -45,7 +45,7 @@
         col-start-6 row-start-1 col-span-4 row-span-10 pl-3
         ipro12:row-start-2 ipro12:row-span-8 ipro12:text-10px ipro12:pl-4
         2xl:text-11px 2xl:leading-14px
-        2xl:col-start-3 2xl:row-start-1 2xl:col-span-1 2xl:row-span-6 2xl:pl-0
+        2xl:col-start-3 2xl:row-start-1 2xl:col-span-1 2xl:row-span-6 2xl:pt-6 2xl:pl-0
       ">
         <div class="2xl:pt-3 2xl:pl-4">
           <ul>
