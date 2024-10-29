@@ -39,7 +39,7 @@
       </div>
 
       <div class="
-        col-start-1 col-span-10 row-start-4
+        col-start-1 col-span-10 row-start-5
         ipro12:row-start-5
         2xl:col-start-1 2xl:row-start-5 2xl:col-span-3
         2xl:flex flex-col justify-center items-start
