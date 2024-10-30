@@ -1,8 +1,11 @@
 <template>
-  <main class="
-    relative container bg-sf-black text-sf-white mx-0 h-full w-full overflow-hidden
-    xl:mx-auto
-  ">
+  <main
+      class="
+        relative container bg-sf-black text-sf-white mx-0 h-full w-full overflow-hidden
+        xl:mx-auto
+      "
+      :class="isMobile ? 'landscape:h-auto landscape:min-h-[1024px]' : ''"
+  >
     <div class="
       h-full grid
       grid-cols-10 grid-rows-12 gap-0 px-14px py-14px
@@ -86,6 +89,7 @@
 import AboutLinks from '@/components/AboutLinks'
 import PorfolioBtn from '@/components/PorfolioBtn'
 import FooterGallery from '@/components/FooterGallery'
+const { isMobile } = useDevice()
 </script>
 
 <style scoped lang="scss">

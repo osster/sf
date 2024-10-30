@@ -4,8 +4,9 @@
       class="
         relative container bg-sf-gray text-sf-white mx-0 h-full w-full overflow-hidden
         xl:mx-auto
-        landscape:h-auto landscape:min-h-[1024px]
-      ">
+      "
+      :class="isMobile ? 'landscape:h-auto landscape:min-h-[1024px]' : ''"
+  >
     <div class="
       h-full grid
       grid-cols-10 grid-rows-12 gap-0 px-14px py-14px
@@ -127,6 +128,18 @@ import { sections, filters } from '@/content'
 import AboutLinks from '@/components/AboutLinks'
 import PorfolioBtn from '@/components/PorfolioBtn'
 import FooterGallery from '@/components/FooterGallery'
+// import { useScreenOrientation } from '@vueuse/core'
+
+const { isMobile } = useDevice()
+
+// const {
+//   isSupported,
+//   orientation,
+//   angle,
+//   lockOrientation,
+//   unlockOrientation,
+// } = useScreenOrientation()
+// lockOrientation('portrait-primary')
 </script>
 
 <style scoped lang="scss">

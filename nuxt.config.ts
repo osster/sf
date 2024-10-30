@@ -42,6 +42,7 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
         '@nuxtjs/device',
+        '@vueuse/nuxt',
     ],
     buildModules: [],
     // robots: {},

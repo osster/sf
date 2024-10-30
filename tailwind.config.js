@@ -45,8 +45,10 @@ module.exports = {
     extend: {
       screens: {
         '2xs': { min: '300px' },
-        'imv12': { min: '375px' }, // iPhone 12/13 mini
-        'ipv12': { min: '428px', max: '428px' }, // Mobile (iPhone 3 - iPhone XS Max).
+        'imv12': { min: '375px', max: '389px' }, // iPhone 12/13 mini
+        'ipv12': { min: '390px' }, // Mobile iPhone 12/13 Pro.
+        'ipmv11': { min: '414px', max: '414px' }, // Mobile iPhone 11 Max.
+        'ipmv12': { min: '428px', max: '428px' }, // Mobile (iPhone 3 - iPhone XS Max).
         xs: { max: '575px' }, // Mobile (iPhone 3 - iPhone XS Max).
         sm: { min: '576px', max: '897px' }, // Mobile (matches max: iPhone 11 Pro Max landscape @ 896px).
         'imh12': { min: '780px' },

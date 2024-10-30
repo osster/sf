@@ -7,6 +7,7 @@
         2xl:absolute
         2xl:bottom-4 2xl:left-4 2xl:right-4 2xl:h-16
       "
+      :class="isMobile ? 'landscape:invisible' : ''"
       v-if="list.length"
   >
     <swiper
@@ -41,12 +42,22 @@
 <script setup>
 import { galleries } from '@/content'
 import {computed, onMounted, ref} from 'vue'
+// import { useScreenOrientation } from '@vueuse/core'
 
 import { Virtual } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 
+// TODO: show/hide on tap for mobiles
 const { isMobile } = useDevice()
+
+// const {
+//   isSupported,
+//   orientation,
+//   angle,
+//   lockOrientation,
+//   unlockOrientation,
+// } = useScreenOrientation()
 
 const list = ref([])
 

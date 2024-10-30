@@ -1,9 +1,11 @@
 <template>
-  <main class="
-    relative container bg-sf-light text-sf-black mx-0 h-full w-full overflow-hidden
-    xl:mx-auto
-    landscape:h-auto landscape:min-h-[1024px]
-  ">
+  <main
+      class="
+        relative container bg-sf-light text-sf-black mx-0 h-full w-full overflow-hidden
+        xl:mx-auto
+      "
+      :class="isMobile ? 'landscape:h-auto landscape:min-h-[1024px]' : ''"
+  >
     <div class="
       h-full grid gap-0
       grid-cols-10 grid-rows-12 px-14px py-14px
@@ -24,7 +26,7 @@
         z-0
          leading-none font-bold
         col-start-1 col-span-12 row-start-1 row-span-3 text-19px
-        ipv12:text-21px ipv12:row-start-2 ipv12:row-span-4
+        ipv12:text-21px ipv12:row-start-2 ipv12:row-span-3
         xl:col-start-1 xl:col-span-8 xl:row-start-1 xl:row-span-6 xl:text-48px xl:pl-8 xl:pt-4
       ">
         <div class="
@@ -34,9 +36,9 @@
           Headquarter: Via Antonio<br>
           Meucci 2 - Verona (Italy)<br>
           <a
-            href="https://www.google.com/maps/place/Via+Antonio+Meucci,+2,+37135+Verona+VR/@45.4057529,10.9710904,17z/data=!4m6!3m5!1s0x477f5f8517796861:0xfc3e40d76ea82c04!8m2!3d45.4057475!4d10.9733086!16s%2Fg%2F11b8v6404x?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank"
-            class="underline"
+              href="https://www.google.com/maps/place/Via+Antonio+Meucci,+2,+37135+Verona+VR/@45.4057529,10.9710904,17z/data=!4m6!3m5!1s0x477f5f8517796861:0xfc3e40d76ea82c04!8m2!3d45.4057475!4d10.9733086!16s%2Fg%2F11b8v6404x?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="underline"
           >Go to Google Maps</a>
         </div>
 
@@ -179,6 +181,8 @@
 
 <script setup>
 import PorfolioBtn from '@/components/PorfolioBtn'
+
+const {isMobile} = useDevice()
 </script>
 
 <style scoped lang="scss">

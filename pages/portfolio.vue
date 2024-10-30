@@ -1,9 +1,11 @@
 <template>
-  <main class="
-    relative container bg-sf-black text-sf-white mx-0 h-full w-full
-    xl:mx-auto
-    landscape:h-auto landscape:min-h-[1024px]
-  ">
+  <main
+      class="
+        relative container bg-sf-black text-sf-white mx-0 h-full w-full
+        xl:mx-auto
+      "
+      :class="isMobile ? 'landscape:h-auto landscape:min-h-[1024px]' : ''"
+  >
     <div class="
       h-full grid
       grid-cols-10 grid-rows-12 gap-0 px-14px py-14px
@@ -22,7 +24,7 @@
       <div class="
         font-bold
         col-start-1 col-span-8 row-start-1 row-span-4 text-18px
-        ipv12:row-start-2 ipv12:text-21px
+        ipv12:row-start-2 ipv12:row-span-3 ipv12:text-21px
         xl:col-start-1 xl:col-span-5 xl:row-start-1 xl:row-span-4 xl:mr-10 xl:text-80px xl:leading-63px
       ">
         <p class="mb-8 xl:mb-0">
@@ -59,6 +61,7 @@
 
 <script setup>
 import EmailForm from '@/components/EmailForm'
+const { isMobile } = useDevice()
 </script>
 
 <style scoped lang="scss">

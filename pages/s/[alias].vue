@@ -1,9 +1,11 @@
 <template>
-  <main class="
-    relative container bg-sf-black text-sf-white mx-0 h-full w-full overflow-hidden bg-no-repeat bg-center bg-cover
-    xl:mx-auto
-    landscape:h-auto landscape:min-h-[1024px]
-  ">
+  <main
+      class="
+        relative bg-sf-black text-sf-white mx-0 h-full w-full overflow-hidden
+        xl:container xl:mx-auto
+      "
+      :class="isMobile ? 'landscape:h-auto landscape:min-h-[1024px]' : ''"
+  >
     <div class="
       h-full grid
       grid-cols-10 grid-rows-12 gap-0 px-0 py-0
@@ -31,7 +33,7 @@
           >
             <div
                 :style="getSlideStyle(d)"
-                class="w-full h-full bg-center"
+                class="w-full h-full bg-center bg-no-repeat bg-cover"
             ></div>
             <!--
             <img
