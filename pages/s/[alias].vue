@@ -1,4 +1,26 @@
 <template>
+
+  <swiper
+      v-if="gallery && gallery.slides.length"
+      class="page-bg-swiper"
+      :slides-per-view="1"
+      :space-between="0"
+      :update-on-window-resize="true"
+      :loop="true"
+      @swiper="onSwiper"
+      @slideChange="onSlideChange"
+  >
+    <swiper-slide
+        v-for="(d, i) in gallery.slides"
+        :key="i"
+    >
+      <div
+          :style="getSlideStyle(d)"
+          class="w-full h-full bg-center bg-no-repeat bg-cover"
+      ></div>
+    </swiper-slide>
+  </swiper>
+
   <main
       class="
         relative bg-sf-black text-sf-white mx-0 h-full w-full overflow-hidden
@@ -12,6 +34,7 @@
       xl:grid-cols-7 xl:grid-rows-7
     ">
 
+      <!--
       <div
           v-if="gallery && gallery.slides.length"
           class="
@@ -20,6 +43,7 @@
           "
       >
         <swiper
+            class="page-bg-swiper"
             :slides-per-view="1"
             :space-between="0"
             :update-on-window-resize="true"
@@ -35,18 +59,10 @@
                 :style="getSlideStyle(d)"
                 class="w-full h-full bg-center bg-no-repeat bg-cover"
             ></div>
-            <!--
-            <img
-                class="
-                w-full h-full
-              "
-                :src="getSlideUrl(d)"
-                :alt="d.key"
-            >
-            -->
           </swiper-slide>
         </swiper>
       </div>
+      -->
 
       <div
           v-if="gallery && (gallery.slides[slideNo].title || gallery.slides[slideNo].sub)"
@@ -199,5 +215,13 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped lang="scss">
-
+.page-bg-swiper {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  //z-index: -1;
+  //object-fit: cover;
+}
 </style>

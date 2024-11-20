@@ -4,8 +4,11 @@
         fixed gap-1
         bottom-1 left-0 right-0 h-20
         ipv12:bottom-10
-        2xl:absolute
-        2xl:bottom-4 2xl:left-4 2xl:right-4 2xl:h-16
+
+        ipv14:bottom-[52px]
+
+        xl:absolute
+        xl:bottom-4 2xl:left-4 2xl:right-4 2xl:h-16
       "
       :class="isMobile ? 'landscape:invisible' : ''"
       v-if="list.length"

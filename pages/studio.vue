@@ -1,4 +1,6 @@
 <template>
+  <BgVideo src="video/rain.mp4"/>
+
   <main
       class="
         relative container bg-sf-black text-sf-white mx-0 h-full w-full overflow-hidden
@@ -89,6 +91,8 @@
 import AboutLinks from '@/components/AboutLinks'
 import PorfolioBtn from '@/components/PorfolioBtn'
 import FooterGallery from '@/components/FooterGallery'
+import BgVideo from '@/components/BgVideo'
+
 const { isMobile } = useDevice()
 </script>
 

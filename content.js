@@ -1,164 +1,220 @@
 export const sections = [
   {
-    name: 'AC MILAN',
-    alias: 'AC MILAN'
+    "name": "AC MILAN",
+    "alias": "ac-milan"
   },
   {
-    name: 'ADIDAS',
-    alias: 'ADIDAS'
+    "name": "ADIDAS",
+    "alias": "adidas"
   },
   {
-    name: 'ALTEA MILANO',
-    alias: 'ALTEA MILANO'
+    "name": "AESSE",
+    "alias": "aesse"
   },
   {
-    name: 'ARENA STUDIO D’ARTE',
-    alias: 'ARENA STUDIO D’ARTE'
+    "name": "ALTEA MILANO",
+    "alias": "altea-milano"
   },
   {
-    name: 'ATALANTA CALCIO',
-    alias: 'ATALANTA CALCIO'
+    "name": "AMISH SUPPLIES",
+    "alias": "amish-supplies"
   },
   {
-    name: 'AW LAB',
-    alias: 'AW LAB'
+    "name": "ARENA STUDIO D’ARTE",
+    "alias": "arena-studio-d-arte"
   },
   {
-    name: 'BARACUTA',
-    alias: 'BARACUTA'
+    "name": "AS MONACO",
+    "alias": "as-monaco"
   },
   {
-    name: 'BRIKO',
-    alias: 'BRIKO'
+    "name": "ASSOS",
+    "alias": "assos"
   },
   {
-    name: 'BUNS',
-    alias: 'BUNS'
+    "name": "ATALANTA CALCIO",
+    "alias": "atalanta-calcio"
   },
   {
-    name: 'BYBLOS',
-    alias: 'BYBLOS'
+    "name": "BARACUTA",
+    "alias": "baracuta"
   },
   {
-    name: 'CINZIA ROCCA',
-    alias: 'CINZIA ROCCA'
+    "name": "BRIKO",
+    "alias": "briko"
   },
   {
-    name: 'CLAUDIA LIGARI',
-    alias: 'CLAUDIA LIGARI'
+    "name": "BUNS",
+    "alias": "buns"
   },
   {
-    name: 'C.P. COMPANY',
-    alias: 'C.P. COMPANY'
+    "name": "BYBLOS",
+    "alias": "byblos"
   },
   {
-    name: 'DOUBLE CLUTCH',
-    alias: 'DOUBLE CLUTCH'
+    "name": "C.P. COMPANY",
+    "alias": "cp-company"
   },
   {
-    name: 'DR. MARTENS',
-    alias: 'DR. MARTENS'
+    "name": "CINZIA ROCCA",
+    "alias": "cinzia-rocca"
   },
   {
-    name: 'FOOT LOCKER',
-    alias: 'FOOT LOCKER'
+    "name": "CLAUDIA LIGARI",
+    "alias": "claudia-ligari"
   },
   {
-    name: 'GIACOMO BAGNARA',
-    alias: 'GIACOMO BAGNARA'
+    "name": "COTOPAXI",
+    "alias": "cotopaxi"
   },
   {
-    name: 'HELLAS VERONA',
-    alias: 'HELLAS VERONA'
+    "name": "DOLOMITE",
+    "alias": "dolomite"
   },
   {
-    name: 'K-WAY',
-    alias: 'k-way'
+    "name": "DR. MARTENS",
+    "alias": "dr-martens"
   },
   {
-    name: 'KAPPA',
-    alias: 'kappa'
+    "name": "ERREA’",
+    "alias": "errea"
   },
   {
-    name: 'KARHU',
-    alias: 'KARHU'
+    "name": "FOOT LOCKER",
+    "alias": "foot-locker"
   },
   {
-    name: 'LA SPORTIVA',
-    alias: 'LA SPORTIVA'
+    "name": "FRAU SHOES",
+    "alias": "frau-shoes"
   },
   {
-    name: 'MISSONI',
-    alias: 'MISSONI'
+    "name": "GIACOMO BAGNARA",
+    "alias": "giacomo-bagnara"
   },
   {
-    name: 'MSGM',
-    alias: 'MSGM'
+    "name": "GROS BASKET",
+    "alias": "gros-basket"
   },
   {
-    name: 'NEW ERA CAP',
-    alias: 'NEW ERA CAP'
+    "name": "HELLAS VERONA",
+    "alias": "hellas-verona"
   },
   {
-    name: 'NIKE',
-    alias: 'NIKE'
+    "name": "JD SPORT",
+    "alias": "jd-sport"
   },
   {
-    name: 'PALLACANESTRO BRESCIA',
-    alias: 'PALLACANESTRO BRESCIA'
+    "name": "JUST PLAY",
+    "alias": "just-play"
   },
   {
-    name: 'PAS DE MER',
-    alias: 'PAS DE MER'
+    "name": "K-WAY",
+    "alias": "k-way"
   },
   {
-    name: 'PATRICIA URQUIOLA',
-    alias: 'PATRICIA URQUIOLA'
+    "name": "KAPPA",
+    "alias": "kappa"
   },
   {
-    name: 'PITTI IMMAGINE',
-    alias: 'PITTI IMMAGINE'
+    "name": "KARHU",
+    "alias": "karhu"
   },
   {
-    name: 'PRADA JOURNAL',
-    alias: 'PRADA JOURNAL'
+    "name": "LA SPORTIVA",
+    "alias": "la-sportiva"
   },
   {
-    name: 'SALEWA',
-    alias: 'SALEWA'
+    "name": "MACRON",
+    "alias": "macron"
   },
   {
-    name: 'SANTINI',
-    alias: 'SANTINI'
+    "name": "METAL GIENCHI",
+    "alias": "metal-gienchi"
   },
   {
-    name: 'SCALIGERA BASKET',
-    alias: 'SCALIGERA BASKET'
+    "name": "MISSONI",
+    "alias": "missoni"
   },
   {
-    name: 'SPECIALIZED',
-    alias: 'SPECIALIZED'
+    "name": "MSGM",
+    "alias": "msgm"
   },
   {
-    name: 'SPORTMAX',
-    alias: 'SPORTMAX'
+    "name": "NEW ERA CAP",
+    "alias": "new-era-cap"
   },
   {
-    name: 'SUNNEI',
-    alias: 'SUNNEI'
+    "name": "NIKE",
+    "alias": "nike"
   },
   {
-    name: 'UNDER ARMOUR',
-    alias: 'UNDER ARMOUR'
+    "name": "PALLACANESTRO BRESCIA",
+    "alias": "pallacanestro-brescia"
   },
   {
-    name: 'VOLTA FOOTWEAR',
-    alias: 'VOLTA FOOTWEAR'
+    "name": "PITTI IMMAGINE",
+    "alias": "pitti-immagine"
   },
   {
-    name: 'WUD',
-    alias: 'WUD'
+    "name": "PRADA JOURNAL",
+    "alias": "prada-journal"
   },
+  {
+    "name": "PUMA",
+    "alias": "puma"
+  },
+  {
+    "name": "RED BULL SALZBURG",
+    "alias": "red-bull-salzburg"
+  },
+  {
+    "name": "SALEWA",
+    "alias": "salewa"
+  },
+  {
+    "name": "SANTINI",
+    "alias": "santini"
+  },
+  {
+    "name": "SEATTLE SOUNDERS FC",
+    "alias": "seattle-sounders-fc"
+  },
+  {
+    "name": "SNIPES",
+    "alias": "snipes"
+  },
+  {
+    "name": "SPECIALIZED USA",
+    "alias": "specialized-usa"
+  },
+  {
+    "name": "SPORTMAX",
+    "alias": "sportmax"
+  },
+  {
+    "name": "SUNNEI",
+    "alias": "sunnei"
+  },
+  {
+    "name": "UNDER ARMOUR",
+    "alias": "under-armour"
+  },
+  {
+    "name": "VOLTA FOOTWEAR",
+    "alias": "volta-footwear"
+  },
+  {
+    "name": "WERDER BREMEN",
+    "alias": "werder-bremen"
+  },
+  {
+    "name": "WILD TEE",
+    "alias": "wild-tee"
+  },
+  {
+    "name": "WUD",
+    "alias": "wud"
+  }
 ]
 
 export const filters = [

@@ -46,16 +46,17 @@ module.exports = {
       screens: {
         '2xs': { min: '300px' },
         'imv12': { min: '375px', max: '389px' }, // iPhone 12/13 mini
-        'ipv12': { min: '390px' }, // Mobile iPhone 12/13 Pro.
-        'ipmv11': { min: '414px', max: '414px' }, // Mobile iPhone 11 Max.
-        'ipmv12': { min: '428px', max: '428px' }, // Mobile (iPhone 3 - iPhone XS Max).
+        // 'ipv12': { min: '390px', max: '390px' }, // Mobile iPhone 12/13 Pro.
+        // 'ipmv11': { min: '414px', max: '414px' }, // Mobile iPhone 11 Max.
+        // 'ipmv12': { min: '428px', max: '428px' }, // Mobile (iPhone 3 - iPhone XS Max).
+        'ipv14': { min: '430px', max: '430px' }, // Mobile (iPhone 3 - iPhone XS Max).
+        
         xs: { max: '575px' }, // Mobile (iPhone 3 - iPhone XS Max).
         sm: { min: '576px', max: '897px' }, // Mobile (matches max: iPhone 11 Pro Max landscape @ 896px).
         'imh12': { min: '780px' },
         md: { min: '898px', max: '1199px' }, // Tablet (matches max: iPad Pro @ 1112px).
         lg: { min: '1200px' }, // Desktop smallest.
-        xl: { min: '1259px' }, // Desktop wide.
-        '2xl': { min: '1359px' }, // Desktop widescreen.
+        xl: { min: '1440px' }, // Desktop wide.
         'portrait': {
           'raw': '(orientation: portrait)'
         },
@@ -68,6 +69,7 @@ module.exports = {
         '9px': '0.5625rem',
         '10px': '0.625rem',
         '11px': '0.6875rem',
+        '14px': '0.875rem',
         '15px': '0.9375rem',
         '16px': '1rem',
         '17px': '1.0625rem',
@@ -80,6 +82,7 @@ module.exports = {
         '80px': '5rem'
       },
       lineHeight: {
+        '12px': '0.75rem',
         '14px': '0.875rem',
         '16px': '1rem',
         '17px': '1.0625rem',
@@ -89,6 +92,7 @@ module.exports = {
         '24px': '1.5rem',
         '26px': '1.625rem',
         '28px': '1.75rem',
+        '41px': '2.565rem',
         '44px': '2.75rem',
         '63px': '3.937rem',
       },

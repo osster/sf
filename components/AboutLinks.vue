@@ -1,10 +1,15 @@
 <template>
   <ul class="
-    text-16px
-    ipv12:text-18px
     leading-none underline
+    text-16px leading-15px
+    ipv14:text-18px ipv14:leading-17px
+
+    xl:text-14px xl:leading-17px
   ">
-    <li class="mb-3">
+    <li class="
+      mb-3
+      ipv14:mb-[0.98rem]
+    ">
       <router-link to="/studio">Studio</router-link>
     </li>
     <li>

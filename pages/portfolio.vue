@@ -1,4 +1,6 @@
 <template>
+  <BgVideo src="video/rain.mp4"/>
+
   <main
       class="
         relative container bg-sf-black text-sf-white mx-0 h-full w-full
@@ -60,6 +62,8 @@
 </template>
 
 <script setup>
+import BgVideo from '@/components/BgVideo'
+
 import EmailForm from '@/components/EmailForm'
 const { isMobile } = useDevice()
 </script>
