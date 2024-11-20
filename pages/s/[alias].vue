@@ -7,6 +7,8 @@
       :space-between="0"
       :update-on-window-resize="true"
       :loop="true"
+      :direction="isMobile ? 'vertical' : 'horizontal'"
+      :initial-slide="slideNo"
       @swiper="onSwiper"
       @slideChange="onSlideChange"
   >
@@ -16,7 +18,7 @@
     >
       <div
           :style="getSlideStyle(d)"
-          class="w-full h-full bg-center bg-no-repeat bg-cover"
+          class="w-full h-full bg-no-repeat bg-cover"
       ></div>
     </swiper-slide>
   </swiper>
@@ -33,36 +35,6 @@
       grid-cols-10 grid-rows-12 gap-0 px-0 py-0
       xl:grid-cols-7 xl:grid-rows-7
     ">
-
-      <!--
-      <div
-          v-if="gallery && gallery.slides.length"
-          class="
-            z-0
-            col-start-1 col-span-10 row-start-1 row-span-12
-          "
-      >
-        <swiper
-            class="page-bg-swiper"
-            :slides-per-view="1"
-            :space-between="0"
-            :update-on-window-resize="true"
-            :loop="true"
-            @swiper="onSwiper"
-            @slideChange="onSlideChange"
-        >
-          <swiper-slide
-              v-for="(d, i) in gallery.slides"
-              :key="i"
-          >
-            <div
-                :style="getSlideStyle(d)"
-                class="w-full h-full bg-center bg-no-repeat bg-cover"
-            ></div>
-          </swiper-slide>
-        </swiper>
-      </div>
-      -->
 
       <div
           v-if="gallery && (gallery.slides[slideNo].title || gallery.slides[slideNo].sub)"
@@ -119,7 +91,7 @@
 <script setup>
 import PorfolioBtn from '@/components/PorfolioBtn'
 import FooterGallery from '@/components/FooterGallery'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import {computed, onBeforeUnmount, onMounted, ref, watch} from 'vue'
 import { galleries } from '@/content'
 
@@ -134,8 +106,10 @@ const config = useRuntimeConfig()
 const bgStyle = ref('')
 const gallery = ref(null)
 const route = useRoute()
+const router = useRouter()
 
 const alias = computed(() => route?.params?.alias || '')
+const slideKey = computed(() => route?.hash.replace(/[#\/]/, '') || 0)
 const logoUrl = computed(() => {
   if (slideTheme.value === 'light') {
     return `${config.app.baseURL}img/logo-sm-white.svg`
@@ -150,15 +124,19 @@ const textColor = computed(() => {
 })
 
 const slideTheme = ref('light')
-const slideNo = ref(0)
+const slideNo = ref(parseInt(slideKey.value, 10))
 const slidesTot = ref(0)
 const timer = ref(null)
 
 const onSwiper = (swiper) => {
   // console.log(swiper);
 };
-const onSlideChange = (d) => {
+const onSlideChange = async (d) => {
   slideNo.value = d?.realIndex || 0;
+  const slide = gallery.value.slides[slideNo.value];
+  if (alias.value !== '') {
+    window.location.hash = `${slideNo.value}`;
+  }
 };
 
 function initGallery() {
@@ -192,10 +170,23 @@ function getSlideUrl(slide) {
 function getSlideStyle(slide) {
   let css = '';
   if (isMobile) {
-    css = `background-image: url(${config.app.baseURL}${slide.fileSm}); height: 100svh;`;
+    let img = slide.fileSm.map((path) => {
+      return `url(${config.app.baseURL}${path})`
+    }).join(', ');
+    css = `background-image: ${img}; height: 100svh; background-position: center;`;
   } else {
-    css = `background-image: url(${config.app.baseURL}${slide.fileLg}); height: 100svh;`;
+    let pos;
+    if (slide.pos?.lg) {
+      pos = `background-position: ${slide.pos.lg?.x || 'center'} ${slide.pos.lg?.y || 'center'}`
+    } else {
+      pos = 'background-position: center';
+    }
+    let img = slide.fileLg.map((path) => {
+      return `url(${config.app.baseURL}${path})`
+    }).join(', ');
+    css = `background-image: ${img}; height: 100svh; ${pos};`;
   }
+  console.log('css', css);
   return css
 }
 

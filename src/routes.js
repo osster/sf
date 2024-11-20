@@ -2,7 +2,7 @@ import IndexPage from '@/pages/IndexPage'
 import StudioPage from '@/pages/StudioPage'
 import ContactsPage from '@/pages/ContactsPage'
 import PortfolioPage from '@/pages/PortfolioPage'
-import SectionPage from '@/pages/SectionPage'
+import SectionPage from '@/pages/s/[alias]/SectionPage'
 import FilterPage from '@/pages/FilterPage'
 
 export default [

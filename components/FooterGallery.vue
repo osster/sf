@@ -84,7 +84,7 @@ onMounted(() => {
   if (galleries.length) {
     galleries.forEach((i) => {
       list.value.push({
-        url: `/s/${i.alias}/`,
+        url: `/s/${i.alias}/#0`,
         alt: i.title,
         thumb: `${config.app.baseURL}${i.thumb}`,
       })
