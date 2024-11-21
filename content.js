@@ -797,12 +797,12 @@ export const galleries = [
         title: 'ANTICA PASTICCERIA BUSATO',
         sub: 'Creative direction, logo design and brand identity.',
         fileLg: ['img/gallery/busato/1.png'],
-        fileSm: ['img/gallery/busato/1-m.png'],
+        fileSm: ['fill:white', 'img/gallery/busato/1-m.png'],
         theme: 'dark',
         pos: {
           lg: {
             x: 'center',
-            y: 'bottom 10%'
+            y: 'center'
           }
         },
       },

@@ -18,7 +18,7 @@
     >
       <div
           :style="getSlideStyle(d)"
-          class="w-full h-full bg-no-repeat bg-cover"
+          class="w-full h-full bg-no-repeat"
       ></div>
     </swiper-slide>
   </swiper>
@@ -169,23 +169,48 @@ function getSlideUrl(slide) {
 
 function getSlideStyle(slide) {
   let css = '';
+  let images;
   if (isMobile) {
-    let img = slide.fileSm.map((path) => {
-      return `url(${config.app.baseURL}${path})`
-    }).join(', ');
-    css = `background-image: ${img}; height: 100svh; background-position: center;`;
+    images = slide.fileSm;
   } else {
-    let pos;
-    if (slide.pos?.lg) {
-      pos = `background-position: ${slide.pos.lg?.x || 'center'} ${slide.pos.lg?.y || 'center'}`
-    } else {
-      pos = 'background-position: center';
-    }
-    let img = slide.fileLg.map((path) => {
-      return `url(${config.app.baseURL}${path})`
-    }).join(', ');
-    css = `background-image: ${img}; height: 100svh; ${pos};`;
+    images = slide.fileLg;
   }
+
+  if (!images) return '';
+
+  let color = 'black';
+  const urls = images.map((path) => {
+    const ms = path.match(/^fill:([\w]+)/)
+    if (ms) {
+      color = ms[1];
+      return `url()`
+    }
+    return `url(${config.app.baseURL}${path})`
+  })
+
+  const positions = [];
+  const sizes = [];
+  for (let i = 0; i <= images.length-1; i++) {
+    if (i === 0) {
+      sizes[i] = 'cover'
+      const p = isMobile ? slide?.pos?.sm : slide?.pos?.lg;
+      if (p) {
+        positions[i] = `${p?.x || 'center'} ${p?.y || 'center'}`
+      } else {
+        positions[i] = 'center';
+      }
+    } else {
+      sizes[i] = 'auto'
+      positions[i] = 'center'
+    }
+  }
+
+  let img = urls.reverse().join(', ');
+  const size = sizes.reverse().join(', ')
+  const pos = positions.reverse().join(', ')
+
+  css = `background-image: ${img}; background-size: ${size}; background-position: ${pos}; background-color: ${color}; height: 100svh;`;
+
   console.log('css', css);
   return css
 }
