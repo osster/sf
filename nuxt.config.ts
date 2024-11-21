@@ -21,6 +21,13 @@ export default defineNuxtConfig({
     devtools: {enabled: true},
     css: ['@/assets/css/main.scss'],
     vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    api: 'modern-compiler' // or "modern"
+                }
+            }
+        },
         plugins: [
             // vsharp({
             //   excludePublic: [
