@@ -19,7 +19,15 @@
       <div
           :style="getSlideStyle(d)"
           class="w-full h-full bg-no-repeat"
-      ></div>
+      >
+        <div class="fixed bottom-[25%] w-full">
+          <img
+              v-if="isMobile && slideNo === 0"
+              :src="`${config.app.baseURL}img/home-menu-btn.png`"
+              class="mx-auto"
+          />
+        </div>
+      </div>
     </swiper-slide>
   </swiper>
 
@@ -195,7 +203,7 @@ function getSlideStyle(slide) {
 
   let color = 'black';
   const urls = images.map((path) => {
-    const ms = path.match(/^fill:([\w]+)/)
+    const ms = path.match(/^fill:([#\w]+)/)
     if (ms) {
       color = ms[1];
       return `url()`

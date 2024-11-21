@@ -372,7 +372,7 @@ export const galleries = [
         sub: 'Creative direction and production of the Spring Summer 2024. Swim suite launch campaign collection.',
         fileLg: ['img/gallery/k-way-2024/1.png'],
         fileSm: ['img/gallery/k-way-2024/1-m.png'],
-        theme: 'light',
+        theme: 'dark',
         pos: {
           lg: {
             x: 'center',
@@ -384,7 +384,7 @@ export const galleries = [
         key: '2',
         fileLg: ['img/gallery/k-way-2024/2.png'],
         fileSm: ['img/gallery/k-way-2024/2-m.png'],
-        theme: 'light',
+        theme: 'dark',
         pos: {
           lg: {
             x: 'center',
@@ -396,13 +396,13 @@ export const galleries = [
         key: '3',
         fileLg: ['img/gallery/k-way-2024/3.png'],
         fileSm: ['img/gallery/k-way-2024/3-m.png'],
-        theme: 'light',
+        theme: 'dark',
       },
       {
         key: '4',
         fileLg: ['img/gallery/k-way-2024/4.png'],
         fileSm: ['img/gallery/k-way-2024/4-m.png'],
-        theme: 'light',
+        theme: 'dark',
         pos: {
           lg: {
             x: 'center',
@@ -414,7 +414,7 @@ export const galleries = [
         key: '5',
         fileLg: ['img/gallery/k-way-2024/5.png'],
         fileSm: ['img/gallery/k-way-2024/5-m.png'],
-        theme: 'light',
+        theme: 'dark',
         pos: {
           lg: {
             x: 'center',
@@ -426,7 +426,7 @@ export const galleries = [
         key: '5',
         fileLg: ['img/gallery/k-way-2024/6.png'],
         fileSm: ['img/gallery/k-way-2024/6-m.png'],
-        theme: 'light',
+        theme: 'dark',
         pos: {
           lg: {
             x: 'center',
@@ -895,45 +895,224 @@ export const galleries = [
     ]
   },
   {
-    alias: 'kappa',
+    alias: 'aesse',
     year: '2023',
-    thumb: 'img/gallery/kappa.png',
+    thumb: 'img/gallery/aesse.png',
+    textColor: 'gray',
     slides: [
       {
         key: '1',
-        title: 'KAPPA',
-        sub: 'Creative direction and production of the Kappa Horizon winter collection.',
-        fileLg: ['img/gallery/kappa/1.png'],
-        fileSm: ['img/gallery/kappa/1-m.png'],
+        title: 'AESSE',
+        sub: 'Creative direction, logo design and visual identity for the iconic italian outdoor brand.',
+        fileLg: ['fill:white', 'img/gallery/aesse/1/1.png'],
+        fileSm: ['fill:white', 'img/gallery/aesse/1-m/1.png'],
         theme: 'light',
-        noMob: true,
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'center'
+          }
+        },
       },
       {
         key: '2',
-        title: 'KAPPA',
-        sub: 'Creative direction and production of the Kappa Horizon winter collection.',
-        fileLg: ['img/gallery/kappa/2.png'],
-        fileSm: ['img/gallery/kappa/2-m.png'],
-        theme: 'light'
+        title: 'AESSE',
+        sub: 'Creative direction, logo design and visual identity for the iconic italian outdoor brand.',
+        fileLg: ['img/gallery/aesse/2.png'],
+        fileSm: ['img/gallery/aesse/2-m.png'],
+        theme: 'dark',
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'center'
+          }
+        },
       },
       {
         key: '3',
-        fileLg: ['img/gallery/kappa/3.png'],
-        fileSm: ['img/gallery/kappa/3-m.png'],
-        theme: 'light'
+        title: 'AESSE',
+        sub: 'Creative direction, logo design and visual identity for the iconic italian outdoor brand.',
+        fileLg: ['img/gallery/aesse/3.png'],
+        fileSm: ['img/gallery/aesse/3-m.png'],
+        theme: 'light',
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'bottom 0%'
+          }
+        },
+      },
+    ]
+  },
+  {
+    alias: 'hellas-verona',
+    year: '2023',
+    thumb: 'img/gallery/hellas-verona.png',
+    textColor: 'gray',
+    slides: [
+      {
+        key: '1',
+        title: 'Hellas Verona',
+        sub: 'Creative direction, logo, product design and visual identity for the iconic italian A series football team.',
+        fileLg: ['fill:white', 'img/gallery/hellas-verona/1/1.png'],
+        fileSm: ['fill:white', 'img/gallery/hellas-verona/1-m/1.png'],
+        theme: 'light',
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'center'
+          }
+        },
+      },
+      {
+        key: '2',
+        title: 'Hellas Verona',
+        sub: 'Creative direction, logo, product design and visual identity for the iconic italian A series football team.',
+        fileLg: ['img/gallery/hellas-verona/2.png'],
+        fileSm: ['img/gallery/hellas-verona/2-m.png'],
+        theme: 'dark',
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'top 0%'
+          }
+        },
+      },
+      {
+        key: '3',
+        title: 'Hellas Verona',
+        sub: 'Creative direction, logo, product design and visual identity for the iconic italian A series football team.',
+        fileLg: ['img/gallery/hellas-verona/3.png'],
+        fileSm: ['img/gallery/hellas-verona/3-m.png'],
+        theme: 'dark',
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'top 0%'
+          }
+        },
       },
       {
         key: '4',
-        fileLg: ['img/gallery/kappa/4.png'],
-        fileSm: ['img/gallery/kappa/4-m.png'],
-        theme: 'light',
+        title: 'Hellas Verona',
+        sub: 'Creative direction, logo, product design and visual identity for the iconic italian A series football team.',
+        fileLg: ['img/gallery/hellas-verona/4.png'],
+        fileSm: ['img/gallery/hellas-verona/4-m.png'],
+        theme: 'dark',
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'center'
+          }
+        },
       },
       {
         key: '5',
-        fileLg: ['img/gallery/kappa/5.png'],
-        fileSm: ['img/gallery/kappa/5-m.png'],
-        theme: 'light'
+        title: 'Hellas Verona',
+        sub: 'Creative direction, logo, product design and visual identity for the iconic italian A series football team.',
+        fileLg: ['img/gallery/hellas-verona/5.png'],
+        fileSm: ['img/gallery/hellas-verona/5-m.png'],
+        theme: 'dark',
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'top 0%'
+          }
+        },
+      },
+      {
+        key: '6',
+        title: 'Hellas Verona',
+        sub: 'Creative direction, logo, product design and visual identity for the iconic italian A series football team.',
+        fileLg: ['fill:white', 'img/gallery/hellas-verona/6/1.png'],
+        fileSm: ['fill:white', 'img/gallery/hellas-verona/6-m/1.png'],
+        theme: 'light',
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'center'
+          }
+        },
       },
     ],
-  }
+  },
+  {
+    alias: 'sportmax',
+    year: '2023',
+    thumb: 'img/gallery/sportmax.png',
+    textColor: 'gray',
+    slides: [
+      {
+        key: '1',
+        title: 'SPORTMAX',
+        sub: 'Creative direction, logo, product design and visual identity for the iconic italian A series football team.',
+        fileLg: ['img/gallery/sportmax/1.png'],
+        fileSm: ['img/gallery/sportmax/1-m.png'],
+        theme: 'dark',
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'bottom 0%'
+          }
+        },
+      },
+      {
+        key: '2',
+        title: '',
+        sub: '',
+        fileLg: ['img/gallery/sportmax/2.png'],
+        fileSm: ['fill:#D9D9D9', 'img/gallery/sportmax/2-m/1.png'],
+        theme: 'dark',
+        pos: {
+          lg: {
+            x: 'center',
+            y: 'center'
+          }
+        },
+      },
+    ],
+  },
+  
+  // {
+  //   alias: 'kappa',
+  //   year: '2023',
+  //   thumb: 'img/gallery/kappa.png',
+  //   slides: [
+  //     {
+  //       key: '1',
+  //       title: 'KAPPA',
+  //       sub: 'Creative direction and production of the Kappa Horizon winter collection.',
+  //       fileLg: ['img/gallery/kappa/1.png'],
+  //       fileSm: ['img/gallery/kappa/1-m.png'],
+  //       theme: 'light',
+  //       noMob: true,
+  //     },
+  //     {
+  //       key: '2',
+  //       title: 'KAPPA',
+  //       sub: 'Creative direction and production of the Kappa Horizon winter collection.',
+  //       fileLg: ['img/gallery/kappa/2.png'],
+  //       fileSm: ['img/gallery/kappa/2-m.png'],
+  //       theme: 'light'
+  //     },
+  //     {
+  //       key: '3',
+  //       fileLg: ['img/gallery/kappa/3.png'],
+  //       fileSm: ['img/gallery/kappa/3-m.png'],
+  //       theme: 'light'
+  //     },
+  //     {
+  //       key: '4',
+  //       fileLg: ['img/gallery/kappa/4.png'],
+  //       fileSm: ['img/gallery/kappa/4-m.png'],
+  //       theme: 'light',
+  //     },
+  //     {
+  //       key: '5',
+  //       fileLg: ['img/gallery/kappa/5.png'],
+  //       fileSm: ['img/gallery/kappa/5-m.png'],
+  //       theme: 'light'
+  //     },
+  //   ],
+  // }
 ]
