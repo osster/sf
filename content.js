@@ -798,7 +798,7 @@ export const galleries = [
         sub: 'Creative direction, logo design and brand identity.',
         fileLg: ['img/gallery/busato/1.png'],
         fileSm: ['fill:white', 'img/gallery/busato/1-m.png'],
-        theme: 'dark',
+        theme: 'light',
         pos: {
           lg: {
             x: 'center',
@@ -808,14 +808,14 @@ export const galleries = [
       },
       {
         key: '2',
-        title: '',
-        sub: '',
+        title: 'ANTICA PASTICCERIA BUSATO',
+        sub: 'Creative direction, logo design and brand identity.',
         fileLg: ['img/gallery/busato/2.png'],
         fileSm: [
           'img/gallery/busato/2-m/bg.png',
           'img/gallery/busato/2-m/1.png',
         ],
-        theme: 'light',
+        theme: 'dark',
         pos: {
           lg: {
             x: 'center',
@@ -825,11 +825,11 @@ export const galleries = [
       },
       {
         key: '3',
-        title: '',
-        sub: '',
+        title: 'ANTICA PASTICCERIA BUSATO',
+        sub: 'Creative direction, logo design and brand identity.',
         fileLg: ['img/gallery/busato/3.png'],
         fileSm: ['img/gallery/busato/3-m.png'],
-        theme: 'light',
+        theme: 'dark',
         pos: {
           lg: {
             x: 'center',
@@ -839,11 +839,11 @@ export const galleries = [
       },
       {
         key: '4',
-        title: '',
-        sub: '',
+        title: 'ANTICA PASTICCERIA BUSATO',
+        sub: 'Creative direction, logo design and brand identity.',
         fileLg: ['img/gallery/busato/4.png'],
         fileSm: ['img/gallery/busato/4-m.png'],
-        theme: 'light',
+        theme: 'dark',
         pos: {
           lg: {
             x: 'center',
@@ -853,8 +853,8 @@ export const galleries = [
       },
       {
         key: '5',
-        title: '',
-        sub: '',
+        title: 'ANTICA PASTICCERIA BUSATO',
+        sub: 'Creative direction, logo design and brand identity.',
         fileLg: [
           'img/gallery/busato/5/bg.png',
           'img/gallery/busato/5/1.png',
@@ -863,7 +863,7 @@ export const galleries = [
           'img/gallery/busato/5-m/bg.png',
           'img/gallery/busato/5-m/1.png',
         ],
-        theme: 'light',
+        theme: 'dark',
         pos: {
           lg: {
             x: 'center',
@@ -873,8 +873,8 @@ export const galleries = [
       },
       {
         key: '6',
-        title: '',
-        sub: '',
+        title: 'ANTICA PASTICCERIA BUSATO',
+        sub: 'Creative direction, logo design and brand identity.',
         fileLg: [
           'img/gallery/busato/6/bg.png',
           'img/gallery/busato/6/1.png',
@@ -883,7 +883,7 @@ export const galleries = [
           'img/gallery/busato/6-m/bg.png',
           'img/gallery/busato/6-m/1.png',
         ],
-        theme: 'light',
+        theme: 'dark',
         pos: {
           lg: {
             x: 'center',

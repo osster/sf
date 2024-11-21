@@ -42,8 +42,12 @@
             z-10
             text-10px leading-5 font-bold
             col-start-1 col-span-8 row-start-1 row-span-3 pl-14px pt-14px
-            ipv12:text-11px ipv12:row-start-2 ipv12:pt-0
-            xl:text-base xl:col-start-1 xl:col-span-3 xl:row-start-1 xl:row-span-3 xl:pr-24 xl:pl-4
+
+            ipv14:text-11px ipv14:row-start-2 ipv14:pt-0
+
+            xl:col-start-1 xl:col-span-3 xl:row-start-1 xl:row-span-3
+            xl:text-12px xl:leading-16px
+            xl:pr-24 xl:pl-4
           "
           :class="textColor"
       >
@@ -60,14 +64,14 @@
       <div class="
         z-10
         col-start-9 col-span-2 row-start-1 flex justify-end items-start
-        ipv12:row-start-2
+        ipv14:row-start-2
         xl:col-start-7 xl:row-start-1 xl:pr-4
         xl:flex justify-end
       ">
         <router-link
             class="
               mr-14px mt-14px
-              ipv12:mt-0
+              ipv14:mt-0
             "
             to="/"
         >
@@ -81,7 +85,7 @@
         xl:visible
         col-start-6 row-start-1
       ">
-        <porfolio-btn/>
+        <porfolio-btn :theme="slideTheme"/>
       </div>
     </div>
     <footer-gallery/>
@@ -103,7 +107,7 @@ import 'swiper/css';
 const { isMobile } = useDevice()
 const config = useRuntimeConfig()
 
-const bgStyle = ref('')
+const theme = ref('')
 const gallery = ref(null)
 const route = useRoute()
 const router = useRouter()
@@ -111,17 +115,14 @@ const router = useRouter()
 const alias = computed(() => route?.params?.alias || '')
 const slideKey = computed(() => route?.hash.replace(/[#\/]/, '') || 0)
 const logoUrl = computed(() => {
-  if (slideTheme.value === 'light') {
-    return `${config.app.baseURL}img/logo-sm-white.svg`
+  switch (slideTheme.value) {
+    case 'light':
+      return `${config.app.baseURL}img/logo-sm-black.svg`;
+    case 'dark':
+      return `${config.app.baseURL}img/logo-sm-white.svg`;
   }
-  return `${config.app.baseURL}img/logo-sm-black.svg`
 })
-const textColor = computed(() => {
-  if (slideTheme.value === 'light') {
-    return 'text-sf-white'
-  }
-  return 'text-sf-black'
-})
+const textColor = ref('text-sf-gray')
 
 const slideTheme = ref('light')
 const slideNo = ref(parseInt(slideKey.value, 10))
@@ -134,6 +135,7 @@ const onSwiper = (swiper) => {
 const onSlideChange = async (d) => {
   slideNo.value = d?.realIndex || 0;
   const slide = gallery.value.slides[slideNo.value];
+  slideTheme.value = slide?.theme || 'gray'
   if (alias.value !== '') {
     window.location.hash = `${slideNo.value}`;
   }
