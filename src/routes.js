@@ -11,5 +11,4 @@ export default [
   { path: '/contacts', component: ContactsPage },
   { path: '/portfolio', component: PortfolioPage },
   { path: '/s/:alias', component: SectionPage },
-  { path: '/f/:alias', component: FilterPage },
 ]

@@ -84,7 +84,7 @@
       ">
         <ul class="pr-5 pt-1">
           <li v-for="(v, i) in filters" :key="i">
-            <router-link :to="`/f/${v.alias}`">{{ v.name }}</router-link>
+            <router-link :to="`/s/${v.alias}`">{{ v.name }}</router-link>
           </li>
         </ul>
       </div>
