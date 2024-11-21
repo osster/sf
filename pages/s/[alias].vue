@@ -122,7 +122,7 @@ const logoUrl = computed(() => {
       return `${config.app.baseURL}img/logo-sm-white.svg`;
   }
 })
-const textColor = ref('text-sf-gray')
+const textColor = ref('')
 
 const slideTheme = ref('light')
 const slideNo = ref(parseInt(slideKey.value, 10))
@@ -144,6 +144,19 @@ const onSlideChange = async (d) => {
 function initGallery() {
   if (alias.value !== '') {
     gallery.value = galleries.find(i => i.alias === alias.value)
+
+    switch (gallery.value?.textColor) {
+      default:
+      case 'white':
+        textColor.value = 'text-sf-white'
+        break
+      case 'gray':
+        textColor.value = 'text-sf-gray'
+        break
+      case 'black':
+        textColor.value = 'text-sf-black'
+        break
+    }
 
     if (gallery.value?.slides?.length) {
       if (timer.value) {

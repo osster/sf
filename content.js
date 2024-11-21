@@ -791,6 +791,7 @@ export const galleries = [
     alias: 'busato',
     year: '2023',
     thumb: 'img/gallery/busato.png',
+    textColor: 'gray',
     slides: [
       {
         key: '1',
